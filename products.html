@@ -4,222 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MK International is world renown for its excellent mechanical keyboards" />
-    <title>MK</title>
-    <link rel="shortcut icon" href="img/pbt-white.png" id="ikonica" type="image/x-icon" />
+    <meta name="description" content="MK International is world renown for its excellent mechanical keyboards"/>
+    <title>Kola leading car rental</title>
+    <link rel="shortcut icon" href="img/strWheel.png" id="ikonica" type="image/x-icon"/>
     <link rel="stylesheet" href="css/bulma.css">
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
     <!-- <link rel="stylesheet" href = "https://www.jsdelivr.com/package/npm/bulma"> -->
-    <link rel="stylesheet" href="/css/helpers.css">
-    <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/bulma-social.min.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bulma-social.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<style>
-    .hero {
-        background: url(img/homepageMK.jpg) center/cover;
 
-    }
-
-    @media (max-width: 900px) {
-        .hero {
-            background: url(img/homepageMK.jpg) center/cover;
-
-        }
-    }
-
-    @media (max-width: 420px) {
-        .hero {
-            background: url(img/homepageMK-small.jpg) center/cover;
-
-        }
-
-        #mkSwitchH1 {
-            font-size: small;
-            font-weight: 800;
-        }
-
-        #mkSwitch {
-            width: 50px;
-            height: 50px;
-        }
-    }
-</style>
 
 <body>
 
-    <!--.hero-->
-    <section class="hero  is-fullheight">
-        <header>
-            <nav class="navbar is-warning" id="navBoja" role="navigation" aria-label="Main navigation">
-                <div class="container">
-                    <div class="navbar-brand is-tablet ">
-                        <a href="index.html"><img src="img/pbt-white.png" id='mkSwitch' width="90" height="20"></a>
-                        <p class="title is-4 navPBrand" style="color:white">Mechanical<br>Keyboard</p>
-                        <div class="navbar-burger" data-target="navbar">
-                            <span style="color:white"></span>
-                            <span style="color:white"></span>
-                            <span style="color:white"></span>
-                        </div>
+<!--.hero-->
+<section class="hero  is-fullheight">
+    <header>
+        <nav class="navbar is-warning" id="navBoja" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="navbar-brand is-tablet ">
+                    <a href="index.html"><img src="img/strWheel.png" id='mkSwitch' width="90" height="20"></a>
+                    <table id="headerBrend">
+                        <tr>
+                            <td><h1 class="title is-2 navPBrand" style="color:white">Kola</h1>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><p class="is-small">Car rental platform</p></td>
+                        </tr>
+                    </table>
+                    <div class="navbar-burger" data-target="navbar">
+                        <span style="color:white"></span>
+                        <span style="color:white"></span>
+                        <span style="color:white"></span>
                     </div>
-                    <div class="navbar-menu navBarAnchor" id="navbar" style="margin-left: 20%;">
-                        <div class="navbar-start">
-                            <div class="navbar-item AboutHover">
-                                <a href="products.html">
-                                    <p>Keyboards</p>
-                                </a>
-
-                            </div>
-                            <div class="navbar-item has-dropdown is-hoverable AboutHover ">
-                                <a href="contact.html" class="navbar-link aPreventDefault">
-                                    <p>Contact</p>
-                                </a>
-                                <ul class="navbar-dropdown is-boxed">
-                                    <a href="contact.html" class="navbar-item burgerColor">Form</a>
-                                    <a href="contact.html#a" class="navbar-item burgerColor">Info</a>
-
-                                </ul>
-                            </div>
-                            <div class="navbar-item AboutHover">
-                                <a href="about.html">
-                                    <p>About Us</p>
-                                </a>
-
-                            </div>
+                </div>
+                <div class="navbar-menu navBarAnchor" id="navbar" style="margin-left: 20%;">
+                    <div class="navbar-start">
+                        <div class="navbar-item AboutHover">
+                            <a href="products.html">
+                                <p>Vehicles</p>
+                            </a>
 
                         </div>
-                        <div class="navbar-end">
-                            <div class="buttons has-addons cart">
-                                <a href="cart.html" id="cartAncher" class="navbar-item has-text-white">
-                                    <span class="icon is-medium">
-                                        <i class="fa fa-cart-arrow-down"></i>
-                                    </span></a>
-                            </div>
+                        <div class="navbar-item has-dropdown is-hoverable AboutHover ">
+                            <a href="registration.html" class="navbar-link aPreventDefault">
+                                <p>Contact</p>
+                            </a>
+                            <ul class="navbar-dropdown is-boxed">
+                                <a href="registration.html" class="navbar-item burgerColor">Form</a>
+                                <a href="registration.html#a" class="navbar-item burgerColor">Info</a>
+
+                            </ul>
+                        </div>
+                        <div class="navbar-item AboutHover">
+                            <a href="about.html">
+                                <p>About Us</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="navbar-end" id="loginRegisterButtons">
+                        <div class="button is-info ReLoButtons">
+                            <a href="login.html" class="navbar-item has-text-white">
+                                <p>Login</p></a>
+                        </div>
+                        <div class="button is-success ReLoButtons">
+                            <a href="registration.html" class="navbar-item has-text-white">
+                                <p>Register</p></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-            </nav>
-        </header>
-
-
-        <div class="tabs is-centered is-large ">
-            <ul>
-                <li class=" is-big" style="margin-right: 1rem;"> <span class="button is-light">Sort </span></li>
-                <li class=" is-big"><span class="button  is-dark " id="smallKeyboardFirst">Small</span></li>
-                <li class=" is-big" style="margin-left: 1rem;"><span class="button  is-dark"
-                        id="bigKeyboardFirst">Big</span></li>
+        </nav>
+    </header>
 
 
-            </ul>
-            <ul>
-                <li class="is-big">
-                    <select class="has-dropdown button  is-dark" id="clickSelectColor">
-                        <option value="" class="selectColor">All Colors</option>
-                        <option value="Red" class="selectColor"> Red</option>
-                        <option value="Black" class="selectColor"> Black</option>
-                        <option value="Blue" class="selectColor"> Blue</option>
-                        <option value="White" class="selectColor"> White</option>
-                        <option value="Grey" class="selectColor">Grey</option>
-                        <option value="Brown" class="selectColor">Brown</option>
-                        <option value="Pink" class="selectColor">Pink</option>
-                    </select>
-                </li>
+    <div class="tabs is-centered is-large ">
+        <ul>
+            <li class=" is-big" style="margin-right: 1rem;"><span class="button is-light">Sort </span></li>
+            <li class=" is-big"><span class="button  is-dark " id="cheaper">Cheaper</span></li>
+            <li class=" is-big" style="margin-left: 1rem;"><span class="button  is-dark"
+                                                                 id="pricier">Pricier</span></li>
 
-            </ul>
+
+        </ul>
+        <ul>
+            <li class="is-big">
+                <select class="has-dropdown button  is-dark" id="clickSelectColor">
+
+                </select>
+            </li>
+
+        </ul>
+        <ul>
+            <button class="button" id="refine">Refine search</button>
+
+        </ul>
+        <br>
+
+    </div>
+    <div id="divTabela">
+
+
+        <div class="field refineField ">
+            <p class="subtitle is-6" style="color:white"> Chose desired color of vehicle</p>
+            <div class="control has-icons-left">
+                <div class="select  is-primary">
+                    <select id="selectColor" name="refineColor"></select>
+                </div>
+                <div class="icon is-small is-left">
+                    <i class="fas fa-palette"></i>
+                </div>
+            </div>
         </div>
 
-        <!-- <div id='wrapper'> -->
-        <main class="" id='keyboardHtml' style="padding:0.1rem;">
+        <div class="field refineField">
+            <p class="subtitle is-6" style="color:white">  Select desired year of production</p>
+            <div class="control has-icons-left">
 
+                <div class="select is-primary">
 
-
-            <!-- <div class="columns is-multiline ">
-                <div class="column is-half ">
-                    <article class="tile is-child notification is-info">
-                        <p class="title">Middle tile</p>
-                        <p class="subtitle">With an image</p>
-
-                    </article>
+                    <select id="selectYear" name="refineProductionYear"></select>
+                </div>
+                <div class="icon is-small is-left">
+                    <i class="fas fa-calendar"></i>
                 </div>
             </div>
+        </div>
 
-            <div class="columns is-multiline is-centered">
-                <div class="column is-half ">
-                    <article class="tile is-child notification is-info">
-                        <figure class="image ">
-                            <img src="img/keyboards/60.png">
-                          </figure>
-
-
-                    </article>
+        <div class="field refineField">
+            <p class="subtitle is-6" style="color:white">Select desired vehicle's body type</p>
+            <div class="control has-icons-left">
+                <div class="select is-primary">
+                    <select id="selectBodyType" name="refineBodyType"></select>
                 </div>
-                <div class="column is-one-quarter ">
-                    <article class="tile is-child notification is-info">
-                        <p class="title">Middle tile</p>
-                        <p class="subtitle">With an image</p>
-
-                    </article>
-                </div>
-                <div class="column is-one-quarter ">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Middle tile</p>
-                        <p class="subtitle">With an image</p>
-
-                    </article>
+                <div class="icon is-small is-left">
+                    <i class="fas fa-car"></i>
                 </div>
             </div>
--->
-        </main>
+        </div>
+    </div>
+    <!-- <div id='wrapper'> -->
+    <main class="basic-grid" id='keyboardHtml' style="padding:0.1rem;">
+
+    </main>
 
 
-        <div class="hero-foot" id="footerBoja">
-            <nav class="tabs">
-                <div class="container center-column white">
-                    <ul>
-                        <li>
+    <div class="hero-foot" id="footerBoja">
+        <nav class="tabs">
+            <div class="container center-column white">
+                <ul>
+                    <li>
                             <span class="icon is-medium">
                                 <i class="fab fa-linkedin"></i>
                                 <span>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                             <span class="icon is-medium ">
                                 <i class="fab fa-github"></i>
                             </span>
-                        </li>
-                        <li>
-                            <a id="bulma" href="https://bulma.io">
-                            </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
+                        <a id="bulma" href="https://bulma.io">
+                        </a>
+                    </li>
+                    <li><a href="Doc.docx">
                             <span class="icon is-medium">
                                 <i class="fas fa-file-pdf"></i>
                             </span>
-                        </li>
+                    </a>
+                    </li>
 
-                        <li>
+                    <li>
                             <span class="icon is-medium">
                                 <i class="fas fa-user-shield"></i>
                             </span>
-                        </li>
+                    </li>
 
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    </section>
-
-
+</section>
 
 
-
-    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/scriptProduct.js"></script>
 
 </body>
 
