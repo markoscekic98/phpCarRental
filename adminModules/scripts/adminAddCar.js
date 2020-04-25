@@ -127,7 +127,7 @@ try {
                         <p class="subtitle is-5" style="color:white">Year</p>
                         <div class="control has-icons-left">
                          <div class="select is-primary">
-                         <select name="addCarYear" id="addCaryear"> <option selected="true" disabled="disabled" value="null"><span>Year</span></option>`;
+                         <select name="addCarYear" id="addCarYear"> <option selected="true" disabled="disabled" value="null"><span>Year</span></option>`;
                         
                          for(let i=dateYear-20; i<dateYear;i++){
                             addCarBodyType +=`<option value="${i}">${i}</option>`;
@@ -179,23 +179,49 @@ try {
                             $('#addCarFuel').hide();
                         }
                         $('#adminAddNewVehicle').append(featuresHTML);
+
                         ////////////////////////////// client side check \\\\\\\\\\\\\\\\\\\\\\\
                         document.querySelector('#addCarEvent').addEventListener('click', checkButton => {
                             checkButton.preventDefault();
-                            let addCarSelectedBrand = document.querySelector('#brandSelect').value;
                             let addCarSelectedModel = document.querySelector('#modelSelect').value;
                             let addCarSelectedColor = document.querySelector('#addCarColor').value;
                             let addCarSelectedBodyType = document.querySelector('#addCarBodyType').value;
                             let addCarSelectedNumOfDoors = document.querySelector('#addCarNumOfDoors').value;
                             let addCarSelectedFuel = document.querySelector('#addCarFuel').value;
-                            let addCarSelectedHP = document.querySelector('#addCarHorsepower').value;
+                            let addCarSelectYear= document.querySelector('#addCarYear').value;
+                            let addCarInputHP = document.querySelector('#addCarHorsepower').value;
                             let addCarInputImagePathname = document.querySelector('#addCarImagePathname').value;
                             let addCarInputPrice = document.querySelector('#addCarPrice').value;
 
-                            if (typeof addCarSelectedBrand != 'null' && typeof addCarSelectedModel != 'null'
-                                && typeof addCarSelectedColor != 'null' && typeof addCarSelectedBodyType != 'null'
-                                && typeof addCarSelectedFuel != 'null' &&   typeof addCarInputImagePathname != 'null'
-                                && typeof addCarInputPrice != 'null') {
+                            let greske =[];
+                                if(addCarSelectedModel === 'null' ){
+                                greske.push('#modelSelect');
+                                }
+                            if(addCarSelectedColor === 'null' ){
+                                greske.push('#addCarColor');
+                            }
+                            if(addCarSelectedBodyType === 'null' ){
+                                greske.push('#addCarBodyType');
+                            }
+                            if(addCarSelectedNumOfDoors === 'null' ){
+                                greske.push('#addCarNumOfDoors');
+                            }
+                            if(addCarSelectedFuel === 'null' ){
+                                greske.push('#addCarFuel');
+                            }
+                            if(addCarSelectYear === 'null' ){
+                                greske.push('#addCarYear');
+                            }
+                            if(addCarInputHP <0 ){
+                                greske.push('#addCarHorsepower');
+                            }
+                            if(addCarInputImagePathname.length <5 ){
+                                greske.push('#addCarImagePathname');
+                            }
+                            if(addCarInputPrice<5 || addCarInputPrice >99999999 ){
+                                greske.push('#addCarPrice');
+                            }
+                            if( greske.length<1) {
                                 $.ajax('adminModules/adminAddCar.php', {
                                     method: 'post',
                                     data: {
@@ -204,27 +230,24 @@ try {
                                         addCarBodyTypePHP: addCarSelectedBodyType,
                                         addCarSelectedDoorsPHP:addCarSelectedNumOfDoors,
                                         addCarFuelPHP: addCarSelectedFuel,
-                                        addCarSelectedHpPHP: addCarSelectedHP,
+                                        addCarHpPHP: addCarInputHP,
                                         addCarImgPathnamePHP: addCarInputImagePathname,
-                                        addCarInputPricePHP : addCarInputPrice
+                                        addCarPricePHP : addCarInputPrice,
+                                        addCarYearPHP : addCarSelectYear
                                     }, success: addCarServerResponse => {
                                         let response = JSON.parse(addCarServerResponse);
                                         console.log(response);
-                                    }
-                                });
-                            }
+
+                                    }//success
+                                });//ajax
+                           }//if
                         }); ///event listener
                         ///////////////////////////////// end of client side check \\\\\\\\\\\\\\\\\
-                    }
-                });
+                    }//success
+                });//ajax adminAddCarGetFeatures.php
             }); //brandSelect EventListener
-        } //, error: function (error, status, xhr) {
-        //     console.log(xhr);
-        //     console.log(error);
-        //     console.log(status);
-        // }
-
-    }); //ajax
+        } //success
+    }); //ajax adminAddCarGetBrand.php
 } catch {
     alert('greska sa bazom ')
 }
