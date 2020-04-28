@@ -35,7 +35,9 @@ include('include/head.php');
 	</div>
 	
 	<div class="button clearBg">
-    <button class="button is-medium adminCarManipulationButtons">Remove existing car</button>
+    <button class="button is-medium adminCarManipulationButtons" id="removeCarShow">Remove existing car</button>
+	</div>
+	<div  id="adminRemoveCarDiv" style="align-items:flex-start;margin:0 auto;max-width:975px;text-align:left">
 	</div>
 
 	<?php
@@ -47,6 +49,7 @@ include('include/head.php');
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="adminModules/scripts/adminAddCar.js"></script>
 </body>

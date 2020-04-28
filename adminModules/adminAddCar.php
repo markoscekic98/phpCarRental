@@ -15,7 +15,7 @@ try {
 		$gottenYear = $_POST['addCarYearPHP'];
 		$gottenHP = (int)$_POST['addCarHpPHP'];
 		$gottenImagePath = "img/cars/{$_POST['addCarImgPathnamePHP']}"; //'img/cars/Audi-Q5.jpg'
-		$gottenPrice = ()$_POST['addCarPricePHP'];
+		$gottenPrice = $_POST['addCarPricePHP'];
 
 
 

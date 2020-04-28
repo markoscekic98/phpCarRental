@@ -6,7 +6,6 @@ $('#addNewCarShow').click(function () {
         $('#adminAddNewVehicle').show();
         $('#adminAddNewVehicle').css('margin-top', '2rem');
         $('#adminAddNewVehicle').css('margin-bottom', '2rem');
-
     }
 });
 try {
@@ -24,15 +23,15 @@ try {
             brand.forEach(br => {
                 addNewCarHTML += ` <option value="${br.brandID}" data="${br.brandID}">${br.brand}</option>`;
             });
-            addNewCarHTML += `</select></div><div class="field"></div>
+            addNewCarHTML += `</select></div>
                             <div class="icon is-small is-left">
                             <i class="fas fa-industry iconGrey"></i>
                             </div>
                             </div>
                             </div>`;
             $('#adminAddNewVehicle').html(addNewCarHTML);
-            /////////////////////////////////////////////////////////////////////////////////////
-            document.querySelector("#brandSelect").addEventListener('change', () => {
+/////////////////////////////////////////////////////////////////////////////////////////////
+            document.querySelector("#brandSelect").addEventListener('change', ()=> {
                 let selectedBrand = document.querySelector("#brandSelect");
                 let selectedBrandID = selectedBrand.options[selectedBrand.selectedIndex].value;
                 if (selectedBrandID > 0) {
@@ -45,28 +44,26 @@ try {
                         success: (modelParam) => {
                             let model = JSON.parse(modelParam);
                             // console.log(model);
-                            let addNewCarModelHTML = `<div class="field">
+                            let addNewCarModelHTML = `<div class="field" id="addCarModelCheck">
                             <p class="subtitle is-5" style="color:white">Model </p>
-                        <div class="control has-icons-left">
-
+                            <div class="control has-icons-left">
                             <div class="select is-primary">
-
                             <select name="modelSelect" id="modelSelect"><option selected="true" disabled="disabled" value="null">Model</option>`;
                             model.forEach(mdl => {
                                 addNewCarModelHTML += `<option value="${mdl.modelID}">${mdl.model}</option>`;
                             });
-                            addNewCarModelHTML += `</select></div><div class="field"></div>
+                            addNewCarModelHTML += `</select></div>
                             <div class="icon is-small is-left">
                             <i class="fas fa-car iconGrey"></i>
-                            </div>
-                            </div>
-                            </div>`;
-                            $('#modelSelect').remove();
-                            $('#adminAddNewVehicle').append(addNewCarModelHTML);
-
+                            </div></div></div>`;
+                         console.log(addNewCarModelHTML);
+                         if($('#addCarModelCheck').is(':visible')){
+                            $('#addCarModelCheck').remove();
+                         }
+                         $('#adminAddNewVehicle').append(addNewCarModelHTML);
                         } //success
                     }); //ajax
-                } //if
+              
                 $.ajax('adminModules/adminAddCarGetFeatures.php', {
                     method: "get",
                     success: (features) => {
@@ -74,7 +71,7 @@ try {
                         let featuresHTML = ``;
                         /////////////////// color \\\\\\\\\\\\\\\\\\
 
-                        let addCarColor = `  <div class="field">
+                        let addCarColor = `<div class="field fieldCar">
                             <p class="subtitle is-5" style="color:white">Color </p>
                         <div class="control has-icons-left">
 
@@ -84,7 +81,7 @@ try {
                         ftrs[0].forEach(ftrCol => {
                             addCarColor += `<option value="${ftrCol.color}">${ftrCol.color}</option>`;
                         });
-                        addCarColor += `</select></div><div class="field"></div>
+                        addCarColor += `</select></div>
                             <div class="icon is-small is-left">
                             <i class="fas fa-palette iconGrey"></i>
                             </div>
@@ -92,7 +89,7 @@ try {
                             </div>`;
                         featuresHTML = addCarColor;
                         ///////////////////// body type \\\\\\\\\\\\\\\\\\\
-                        let addCarBodyType = `<div class="field">
+                        let addCarBodyType = `<div class="field fieldCar">
                             <p class="subtitle is-5" style="color:white">Body type </p>
                         <div class="control has-icons-left">
 
@@ -109,7 +106,7 @@ try {
                             </div>
                             </div>
                           
-                            <div class="field">
+                            <div class="field fieldCar">
                             <p class="subtitle is-5" style="color:white">Number of doors </p>
                         
                             <div class="select is-primary">
@@ -123,7 +120,7 @@ try {
                         `;
                         let dateYear = new Date().getUTCFullYear();
                         console.log(dateYear);
-                        addCarBodyType +=`<div class="field">
+                        addCarBodyType +=`<div class="field fieldCar">
                         <p class="subtitle is-5" style="color:white">Year</p>
                         <div class="control has-icons-left">
                          <div class="select is-primary">
@@ -140,7 +137,7 @@ try {
                          </div>`;
                         featuresHTML += addCarBodyType;
                         ////////////////////// fuel \\\\\\\\\\\\\\\\\\\\\\\
-                        let addCarFuel = `<div class="field">
+                        let addCarFuel = `<div class="field fieldCar">
                             <p class="subtitle is-5" style="color:white">Fuel </p>
                         <div class="control has-icons-left">
                                <div class="select is-primary">
@@ -149,38 +146,43 @@ try {
                             addCarFuel += `<option value="${ftrFl.fuel}">${ftrFl.fuel} </option>`;
                         });
                         addCarFuel += `</select>
-                                            </div> <div class="field">
+                                            </div> <div class="field fieldCar">
                             <div class="icon is-small is-left">
                             <i class="fas fa-gas-pump iconGrey"></i></div></div> </div>
-                            <div class="field">
-                            <p class="subtitle is-5" style="color:white; margin-top:10px;">Image pathname </p>
+                            <div class="field fieldCar">
+                            <p class="subtitle is-5" style="color:white; margin-top:10px;">Image name </p>
                             <p class="control has-icons-left has-icons-right">
-                            <input type="text" class="input" placeholder="Image location" id="addCarImagePathname" name="addCarImageLocation"> 
+                            <input type="text" class="input" placeholder="Image" id="addCarImage" name="addCarImage"> 
                             <span class="icon is-small is-left"><i class="fas fa-image iconGrey">
                             </i></span></p></div>
                             
-                            <div class="field">
+                            <div class="field fieldCar">
                                 <p class="subtitle is-5" style="color:white; margin-top:10px;">Engine power</p>
                                 <input type="text" class="input" placeholder="Horsepower" id="addCarHorsepower" name="addCarHorsepower"> 
                             </div>
                             
-                            <div class="field">
+                            <div class="field fieldCar">
                                 <p class="subtitle is-5" style="color:white; margin-top:10px;">Price</p>
                                 <input type="text" class="input" placeholder="$$$" id="addCarPrice" name="addCarPrice"> 
                             </div>
                             
-                            <div class="field">
+                            <div class="field fieldCar">
                             <div class="container center-column white">
                             <button class='button' id="addCarEvent">Check</button></div>`;
                         featuresHTML += addCarFuel;
-                        if ($('#addCarColor').is(':visible') && $('#addCarBodyType').is(':visible') && $('#addCarFuel').is(':visible')) {
-                            $('#addCarColor').hide();
-                            $('#addCarBodyType').hide();
-                            $('#addCarFuel').hide();
+                        if ($('.fieldCar').is(':visible')) {
+                            $('.fieldCar').remove();
+                            // $('#addCarColor').remove();
+                            // $('#addCarBodyType').remove();
+                            // $('#addCarFuel').remove();
                         }
                         $('#adminAddNewVehicle').append(featuresHTML);
-
-                        ////////////////////////////// client side check \\\\\\\\\\\\\\\\\\\\\\\
+                        $.when($('#addCarModelCheck').is(':visible')).done(function(){
+                         
+                            console.log('when radi');
+                        });
+                        
+    //////////////////////////////////  client side check    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                         document.querySelector('#addCarEvent').addEventListener('click', checkButton => {
                             checkButton.preventDefault();
                             let addCarSelectedModel = document.querySelector('#modelSelect').value;
@@ -190,7 +192,7 @@ try {
                             let addCarSelectedFuel = document.querySelector('#addCarFuel').value;
                             let addCarSelectYear= document.querySelector('#addCarYear').value;
                             let addCarInputHP = document.querySelector('#addCarHorsepower').value;
-                            let addCarInputImagePathname = document.querySelector('#addCarImagePathname').value;
+                            let addCarInputImagePathname = document.querySelector('#addCarImage').value;
                             let addCarInputPrice = document.querySelector('#addCarPrice').value;
 
                             let greske =[];
@@ -216,7 +218,7 @@ try {
                                 greske.push('#addCarHorsepower');
                             }
                             if(addCarInputImagePathname.length <5 ){
-                                greske.push('#addCarImagePathname');
+                                greske.push('#addCarImage');
                             }
                             if(addCarInputPrice<5 || addCarInputPrice >99999999 ){
                                 greske.push('#addCarPrice');
@@ -241,13 +243,65 @@ try {
                                     }//success
                                 });//ajax
                            }//if
+                           else{
+                            swal("Error", "Incorrect data", "error");
+                           }
                         }); ///event listener
                         ///////////////////////////////// end of client side check \\\\\\\\\\\\\\\\\
                     }//success
                 });//ajax adminAddCarGetFeatures.php
+                }//if
             }); //brandSelect EventListener
         } //success
     }); //ajax adminAddCarGetBrand.php
 } catch {
-    alert('greska sa bazom ')
+    alert('greska sa bazom');
 }
+////////////////////////////////////////////////////////////////////////////
+
+                    //REMOVE CAR
+
+////////////////////////////////////////////////////////////////////////////
+$('#adminRemoveCarDiv').hide();
+$('#removeCarShow').click(function () {
+    if ($('#adminRemoveCarDiv').is(':visible')) {
+        $('#adminRemoveCarDiv').hide();
+    } else {
+        $('#adminRemoveCarDiv').show();
+        // $('#adminRemoveCarDiv').css('margin-top', '2rem');
+        // $('#adminRemoveCarDiv').css('margin-bottom', '2rem');
+    }
+});
+
+document.querySelector('#removeCarShow').addEventListener('click',()=>{
+    $.ajax('adminModules/adminRemoveCar.php',{
+        method:'get',
+        success:(collumns)=>{
+            let removeParsed = JSON.parse(collumns);
+            console.log(removeParsed, typeof removeParsed);
+            let removeCarTML =`<div class="field">
+            <p class="subtitle is-5" style="color:white">Collumn </p>
+            <div class="select is-primary">
+            <select name="brandSelect" id="brandSelect">
+            <option selected="true"  value='null'disabled="disabled">Coullumn</option>`;
+                for(let rmv in removeParsed){
+                    removeCarTML+= `<option value=${rmv}>${rmv}</option>`;
+                }
+            removeCarTML+=`</select></div>
+            <select>
+          <option selected="true"  value='null'disabled="disabled">jednakost</option>
+          <option> = </option> 
+          <option>!= </option>
+          <option> < </option>
+          <option> > </option>
+          </select> 
+            </div>`;
+            $('#adminRemoveCarDiv').append(removeCarTML);
+        }
+    });
+});
+//#addNewCarShow -button
+//#adminAddNewVehicle -div
+
+//#removeCarShow -button
+//#adminRemoveCarDiv -div
