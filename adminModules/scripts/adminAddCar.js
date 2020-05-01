@@ -262,44 +262,58 @@ try {
                     //REMOVE CAR
 
 ////////////////////////////////////////////////////////////////////////////
-$('#adminRemoveCarDiv').hide();
-$('#removeCarShow').click(function () {
-    if ($('#adminRemoveCarDiv').is(':visible')) {
-        $('#adminRemoveCarDiv').hide();
-    } else {
-        $('#adminRemoveCarDiv').show();
-        // $('#adminRemoveCarDiv').css('margin-top', '2rem');
-        // $('#adminRemoveCarDiv').css('margin-bottom', '2rem');
-    }
-});
+// $('#adminRemoveCarDiv').hide();
+// $('#removeCarShow').click(function () {
+//     if ($('#adminRemoveCarDiv').is(':visible')) {
+//         $('#adminRemoveCarDiv').hide();
+//     } else {
+//         $('#adminRemoveCarDiv').show();
+//         // $('#adminRemoveCarDiv').css('margin-top', '2rem');
+//         // $('#adminRemoveCarDiv').css('margin-bottom', '2rem');
+//     }
+// });
 
-document.querySelector('#removeCarShow').addEventListener('click',()=>{
-    $.ajax('adminModules/adminRemoveCar.php',{
+//document.querySelector('#removeCarShow').addEventListener('click',()=>{
+    $.ajax('adminModules/adminGetCollumns.php',{
         method:'get',
         success:(collumns)=>{
             let removeParsed = JSON.parse(collumns);
             console.log(removeParsed, typeof removeParsed);
-            let removeCarTML =`<div class="field">
-            <p class="subtitle is-5" style="color:white">Collumn </p>
-            <div class="select is-primary">
-            <select name="brandSelect" id="brandSelect">
-            <option selected="true"  value='null'disabled="disabled">Coullumn</option>`;
-                for(let rmv in removeParsed){
-                    removeCarTML+= `<option value=${rmv}>${rmv}</option>`;
-                }
-            removeCarTML+=`</select></div>
-            <select>
-          <option selected="true"  value='null'disabled="disabled">jednakost</option>
-          <option> = </option> 
-          <option>!= </option>
-          <option> < </option>
-          <option> > </option>
-          </select> 
-            </div>`;
-            $('#adminRemoveCarDiv').append(removeCarTML);
+        //     let removeCarTML =`<div class="field">
+        //     <p class="subtitle is-5" style="color:white">Collumn </p>
+        //     <div class="select is-primary">
+        //     <select name="brandSelect" id="brandSelect">
+        //     <option selected="true"  value='null'disabled="disabled">Coullumn</option>`;
+        //         for(let rmv in removeParsed){
+        //             removeCarTML+= `<option value=${rmv}>${rmv}</option>`;
+        //         }
+        //     removeCarTML+=`</select></div>
+        //     <select>
+        //   <option selected="true"  value='null'disabled="disabled">jednakost</option>
+        //   <option> = </option> 
+        //   <option>!= </option>
+        //   <option> < </option>
+        //   <option> > </option>
+        //   </select> 
+        //     </div>`;
+        let removeCarHTML = `<table class="table"> <tr>
+        <td  class="is-info">ID</td>
+        <td>Name</td>
+        <td>Model</td>
+        <td>Body</td>
+        <td>Fuel</td>
+        <td>Power</td>
+        <td>Doors</td>
+        <td>Year</td>
+        <td>Color</td>
+        <td>Price</td>
+        <td class="is-warning">Update</td>
+        <td class="is-danger">Delete</td>
+        </tr><table>`;
+            $('#adminRemoveCarDiv').append(removeCarHTML);
         }
     });
-});
+//});
 //#addNewCarShow -button
 //#adminAddNewVehicle -div
 

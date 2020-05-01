@@ -34,9 +34,9 @@ include('include/head.php');
 	<div  id="adminAddNewVehicle" style="align-items:flex-start;margin:0 auto;max-width:975px;text-align:left">
 	</div>
 	
-	<div class="button clearBg">
+	<!-- <div class="button clearBg">
     <button class="button is-medium adminCarManipulationButtons" id="removeCarShow">Remove existing car</button>
-	</div>
+	</div> -->
 	<div  id="adminRemoveCarDiv" style="align-items:flex-start;margin:0 auto;max-width:975px;text-align:left">
 	</div>
 
