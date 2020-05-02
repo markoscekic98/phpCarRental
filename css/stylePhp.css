@@ -302,3 +302,6 @@ header table tr{
 .adminCarManipulationButtons{
     margin-bottom: 2rem;
 }
+#transparrentTr{
+    border:1px solid rgba(255, 255, 255, 0) !important;
+}

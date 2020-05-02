@@ -15,7 +15,7 @@ ob_start();
 include('include/head.php');
 ?>
 
-
+<link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 <body>
 <main class="hero  is-fullheight">
 	<?php include('include/header.php');
