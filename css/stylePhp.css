@@ -305,3 +305,7 @@ header table tr{
 #transparrentTr{
     border:1px solid rgba(255, 255, 255, 0) !important;
 }
+#tableVisible{
+    margin-top:2rem;
+
+}

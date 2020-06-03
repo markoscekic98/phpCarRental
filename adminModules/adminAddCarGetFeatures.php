@@ -1,6 +1,6 @@
 <?php
 require('../connINI.php');
-try {
+try {/// could be optimized for only one query 
 	$getFeatureColor = $conn->query('select distinct(color) from car;')->fetchAll();
 	$getFeatureBodyType = $conn->query('select distinct(bodyType) from car;')->fetchAll();
 	$getFeatureFuel = $conn->query('select distinct(fuel) from car;')->fetchAll();

@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+//phpinfo();
 //include "connINI.php";
 //session_start();
 /////////////// ajax jquery
@@ -51,5 +51,35 @@ phpinfo();
 //	$loginTime = new DateTime();
 //	echo "{$sessijaUserLog}, {$ip}, {$loginTime ->getTimestamp()} <br>";
 //}
+// if(isset($_POST['fileFunctionCall'])){
+//	 $fileUpld = $_FILES['fileTesting']['name'];
+//	 $carsImagePath = 'http://localhost/bulmaPHP/img/cars/';
+//	// move_uploaded_file($_FILES['fileTesting']['tmp_name'], $carsImagePath);
+//	 echo json_encode("Server got data " . $fileUpld);
 //
+// } else{
+// 	echo json_encode("Server didnt got data");
+// }
+
+
+//allowed file types
+$arr_file_types = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
+if(isset($_FILES['file'])) {
+	$fileGotten = $_FILES['file']['name'];
+//if (!(in_array($_FILES['file']['type'], $arr_file_types))) {
+//	echo "false";
+//	return;
+//}
 //
+//if (!file_exists('uploads')) {
+//	mkdir('uploads', 0777);
+//}
+
+//move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);
+
+	echo json_encode("success, " . $fileGotten);
+}
+else{
+	echo json_encode("fail, no files");
+}
+die();

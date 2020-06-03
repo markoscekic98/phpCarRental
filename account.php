@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if(isset($_SESSION['userLoggedIN'])){
 //include "connINI.php";
 	$korisnik = $_SESSION['userLoggedIN'];

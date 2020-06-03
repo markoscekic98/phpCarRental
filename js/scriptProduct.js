@@ -66,37 +66,35 @@ $.ajax('products.php', {
         if (selectColor.length > 1) {
             let carColorSelect = parseProducts.filter((carCol) => carCol.color === selectColor);
             funHtmlDynamic(carColorSelect);
-        } else {
-             funHtmlDynamic(parseProducts);
         }
       });
 
 /////////////// fun addEventCart() trenutno nije u funkciji\\\\\\\\\\\\\\\\\\
-    function addEventCart() {
-        let dataLsCart = [];
-        document.querySelectorAll('.korpa').forEach(shoppingCart => {
-          shoppingCart.addEventListener('click', eventCartButton => {
-      
-            let addToCartAnimation = setTimeout(loadAnim, 0);
-
-            function loadAnim() {
-              shoppingCart.classList.add('is-loading');
-            }
-            setTimeout(() => {
-              clearInterval(addToCartAnimation);
-              shoppingCart.classList.remove('is-loading');
-              shoppingCart.innerHTML = `<span class="icon is-small white">
-                                 <i class="fa fa-check white"></i>
-                                 </span class="white"><span>Saved</span>`;
-            }, 700);
-
-            dataLsCart.push(shoppingCart.value);
-            $('#cartAncher').html(`<span class="icon is-medium"><i class="fa fa-cart-arrow-down"></i>
-                </span><p class="korpaBroj">${dataLsCart.length}</p>`);
-            localStorage.setItem("Product", JSON.stringify(dataLsCart));
-         });//addEventListner
-        });//forEach(shoppingCart)
-      } //fun addEventCart
+//     function addEventCart() {
+//         let dataLsCart = [];
+//         document.querySelectorAll('.korpa').forEach(shoppingCart => {
+//           shoppingCart.addEventListener('click', eventCartButton => {
+//
+//             let addToCartAnimation = setTimeout(loadAnim, 0);
+//
+//             function loadAnim() {
+//               shoppingCart.classList.add('is-loading');
+//             }
+//             setTimeout(() => {
+//               clearInterval(addToCartAnimation);
+//               shoppingCart.classList.remove('is-loading');
+//               shoppingCart.innerHTML = `<span class="icon is-small white">
+//                                  <i class="fa fa-check white"></i>
+//                                  </span class="white"><span>Saved</span>`;
+//             }, 700);
+//
+//             dataLsCart.push(shoppingCart.value);
+//             $('#cartAncher').html(`<span class="icon is-medium"><i class="fa fa-cart-arrow-down"></i>
+//                 </span><p class="korpaBroj">${dataLsCart.length}</p>`);
+//             localStorage.setItem("Product", JSON.stringify(dataLsCart));
+//          });//addEventListner
+//         });//forEach(shoppingCart)
+//       } //fun addEventCart
 
         function funHtmlDynamic(data) {
             let htmlAjax = ``;
@@ -132,7 +130,7 @@ $.ajax('products.php', {
       <p class="subtitle is-4">$${p.initialPriceCar}</p>
 
 <!--      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>-->
-<button class="button is-dark korpa" value="$  {p.carID}" id="idKorpa">Add to cart</button>
+<button class="button is-dark korpa" value="${p.carID}" id="idKorpa">Add to cart</button>
     </div>
   </div>
 </div>`;
