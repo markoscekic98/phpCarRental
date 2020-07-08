@@ -197,10 +197,10 @@ try {
                     });
 
                     //////////////////////////////////  client side check    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                   // document.getElementById('addCarEvent').addEventListener('click', () => {
+                    // document.getElementById('addCarEvent').addEventListener('click', () => {
 
-                       // checkButton.preventDefault();
-                       $(".modal-button-image").click(function () {
+                    // checkButton.preventDefault();
+                    $(".modal-button-image").click(function () {
                         console.log('pritisnuto je');
                         //let targetValue = $(this).val();
                         let target = $(this).data("target");
@@ -234,8 +234,8 @@ try {
                             //     return false;
                             // });
                         });
-                    
-                    
+
+
                         let addCarSelectedModel = document.querySelector('#modelSelect').value;
                         let addCarSelectedColor = document.querySelector('#addCarColor').value;
                         let addCarSelectedBodyType = document.querySelector('#addCarBodyType').value;
@@ -297,21 +297,34 @@ try {
                                     console.log(response);
                                     ///////////
                                     if (JSON.parse(response) === 'Car successfully added to database') {
-                                    $('#addCarModalhtmlID').html(`<input type="file" name="image" class="image" required  style="width:125px; border-radius:5px" id="addCarImageInsert" >
-                             <input type="submit" name="submit" class="submitFile button is-dark"  style="margin-left:1rem" value="Submit" id="adminAddCarImageInsert">`);
-                                     }
-                                    $('.submitFile').on('click', function() {
+                                        $('#addCarModalhtmlID').html(` <div class="file has-name"><label class="file-label">
+                                            <input class="file-input image" type="file" name="image" id="addCarImageInsert">
+                                            <span class="file-cta"><span class="file-icon"><i class="fas fa-upload"></i></span><span class="file-label">
+                                            Choose a file…
+                                            </span></span><span class="file-name"></span>
+                                            <input type="submit" name="submit" class="submitFile button is-dark"  style="margin-left:1rem" value="Submit" id="adminAddCarImageInsert">
+                                            </label></div>`
+                                        );//.html
+                                        const fileInput = document.querySelector('.file-input');
+                                        fileInput.onchange = () => {
+                                            if (fileInput.files.length > 0) {
+                                                const fileName = document.querySelector('.file-name');
+                                                fileName.textContent = fileInput.files[0].name;
+                                            }
+                                        }//onchange
+                                    }//if
+                                    $('.submitFile').on('click', function () {
                                         var file_data = $('.image').prop('files')[0];
-                                        if(file_data != undefined) {
+                                        if (file_data != undefined) {
                                             var form_data = new FormData();
                                             form_data.append('file', file_data);
-                                            $.ajax('adminModules/adminAddCarFile.php',{
+                                            $.ajax('adminModules/adminAddCarFile.php', {
                                                 type: 'POST',
                                                 contentType: false,
                                                 processData: false,
                                                 data: form_data,
-                                                success:function(response) {
-                                                    console.log(JSON.parse(response));
+                                                success: function (response) {
+                                                    console.log(response);
                                                     // if(response == 'success') {
                                                     //     alert('File uploaded successfully.');
                                                     // } else if(response == 'false') {
@@ -324,27 +337,29 @@ try {
                                         }
                                         return false;
                                     });
-                                 } //success
+                                } //success
                             }); //ajax
                         } //if
                         else {
-                           let errorsAddCarHTML = ``;
-                           for(let err of formErr ){
-                                errorsAddCarHTML +=` <div class="buttons"><button class="button is-warning formErrorNotification">Please correct: ${err} </button></div>`;
-                                
-                           }
+                            let errorsAddCarHTML = ``;
+                            for (let err of formErr) {
+                                errorsAddCarHTML += ` <div class="buttons"><button class="button is-warning formErrorNotification">Please correct: ${err} </button></div>`;
+
+                            }
                             $('#addCarModalhtmlID').html(errorsAddCarHTML);
-                           $('.formErrorNotification').css({'margin':'0.1rem'});
-                           $('#resultOfUpdateCar').html(`<button class="button is-info" id="resetForm">Reset form</button>`);
-                           document.getElementById('resetForm').addEventListener('click',() =>{
-                               window.location.reload();
-                           });
+                            $('.formErrorNotification').css({
+                                'margin': '0.1rem'
+                            });
+                            $('#resultOfUpdateCar').html(`<button class="button is-info" id="resetForm">Reset form</button>`);
+                            document.getElementById('resetForm').addEventListener('click', () => {
+                                window.location.reload();
+                            });
                         }
                     });
-                        $(".modal-close").click(function () {
-                            $("html").removeClass("is-clipped");
-                            $(this).parent().removeClass("is-active");
-                        });
+                    $(".modal-close").click(function () {
+                        $("html").removeClass("is-clipped");
+                        $(this).parent().removeClass("is-active");
+                    });
                     // });
 
                     ///////////////////////////////// end of client side check \\\\\\\\\\\\\\\\\
@@ -361,4 +376,3 @@ try {
 //REMOVE CAR
 
 ////////////////////////////////////////////////////////////////////////////
-
