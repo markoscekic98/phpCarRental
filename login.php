@@ -1,8 +1,11 @@
 <?php
 
 session_start();
-
-include('security/antiCSRF.php')
+include('security/antiCSRF.php');
+$checkboxShaVal = base64_encode(openssl_random_pseudo_bytes(16, $crypto_strong));
+if (!isset($_SESSION['adminLogin'])) {
+	$_SESSION['adminLogin'] = $checkboxShaVal;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +23,7 @@ include('security/antiCSRF.php')
     <!-- <link rel="stylesheet" href = "https://www.jsdelivr.com/package/npm/bulma"> -->
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/stylePHP.css">
+    <link rel="stylesheet" href="css/stylePhp.css">
     <link rel="stylesheet" href="css/bulma-social.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -33,7 +36,8 @@ include('security/antiCSRF.php')
         <nav class="navbar is-warning" id="navBoja" role="navigation" aria-label="Main navigation">
             <div class="container">
                 <div class="navbar-brand is-tablet ">
-                    <a href="index.html"><img src="img/strWheel.png" id='mkSwitch' width="90px" height="20px"></a>
+                    <a href="index.html"><img src="img/strWheel.png" id='mkSwitch' alt="Wheel picture" width="90px"
+                                              height="20px"></a>
                     <table id="headerBrend">
                         <tr>
                             <td><h1 class="title is-2 navPBrand" style="color:white">Kola</h1>
@@ -97,11 +101,10 @@ include('security/antiCSRF.php')
 
             <div class="column abcd ">
                 <div class="center-column has-text-centered subtitle">
-                    <h2 class="title is-2 white ">Contact Form</h2>
-                    <p class='content is-small'>If you have any questions, please feel free to contact us. Thank
-                        you.</p>
+                    <h2 class="title is-2 white ">Login</h2>
+                    <p class='content is-small'>In order to rent one of our excellent cars, please login first</p>
                 </div>
-                <form method="post" id="contactForm">
+                <form method="post" id="loginForm">
 
                     <div class="field">
                         <label class="label has-text-white">Username</label>
@@ -116,38 +119,6 @@ include('security/antiCSRF.php')
                         <p class="help is-danger ContactError" id="usernameError"></p>
                     </div>
 
-
-                    <div class="field">
-                        <label class="label has-text-white">Date of birth</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input class="input is-medium" id="dob" name="dob" type="date" placeholder="Text input"
-                                   value="">
-                            <!-- class="input is-danger" -->
-                            <span class="icon is-small is-left has-text-grey">
-                  <i class="fa fa-map" aria-hidden="true"></i>
-                </span>
-                            <!-- <span class="icon is-small is-right">
-										<i class="fas fa-check"></i>
-									  </span> -->
-                        </div>
-                        <p class="help is-danger ContactError" id="dobError"></p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label has-text-white">Email</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input class="input is-medium" id="email" name="email" type="email"
-                                   placeholder="Email input" value="">
-                            <!-- class="input is-danger" -->
-                            <span class="icon is-small is-left has-text-grey">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                            <span class="icon is-small is-right">
-                  <!-- <i class="fas fa-exclamation-triangle emailError"></i> -->
-                </span>
-                        </div>
-                        <p class="help is-danger ContactError" id="emailError"></p>
-                    </div>
 
                     <div class="field">
                         <label class="label has-text-white">Password</label>
@@ -165,13 +136,20 @@ include('security/antiCSRF.php')
                         <p class="help is-danger ContactError" id="passError"></p>
                     </div>
 
-                    <div class="field">
-                        <div class="control center-column">
-                            <input type="submit" class="button" name='submitInfo' id="submitInfo" value="Submit">
-                            <!-- <button class="button is-link">Help</button> -->
-                        </div>
+                    <div class="field center-column">
+                        <div class="control left-column">
+                            <input type="checkbox" class="checkbox" name='adminLogin' id="adminLogin"
+                                   value="<?= $_SESSION['adminLogin'] ?>" style="margin-right: 15px;"><span
+                                    class="has-text-white">Admin login</span>
 
-                    </div>
+                        </div>
+                        <div class="field">
+                            <div class="control center-column">
+                                <input type="submit" class="button" name='submitInfo' id="submitInfo" value="Submit">
+                                <!-- <button class="button is-link">Help</button> -->
+                            </div>
+
+                        </div>
                 </form>
             </div>
             <hr class="devider"
@@ -250,8 +228,10 @@ include('security/antiCSRF.php')
 <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
-<script type="text/javascript" src="js/scriptRegister.js"></script>
+<script type="text/javascript" src="js/scriptLogin.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+
 </body>
 
 </html>

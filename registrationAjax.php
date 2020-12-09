@@ -1,22 +1,19 @@
 <?php
-//session_start();
-$userCredentials='';
-$userErrors = array();
-
-
-if(isset($_POST['usernameAjax']) && isset($_POST['dobAjax']) && isset($_POST['emAjax']) && isset($_POST['passAjax'])){
-    $username = filter_var($_POST['usernameAjax'], FILTER_SANITIZE_STRING);
-    $userEmail = filter_var($_POST['emAjax'], FILTER_SANITIZE_STRING);
-    $userPassword = filter_var($_POST['passAjax'], FILTER_SANITIZE_STRING);
-    $userDateOfBirth = $_POST['dobAjax'];
-
-   $dobTemp = DateTime::createFromFormat('Y-m-d', $userDateOfBirth);
-    $dob = $dobTemp->format('Y-m-d');
-   define('usernameRegEx', '/^[a-z0-9]{4,13}$/');
-   define('emailRegEx','/^[a-z0-9]+@[a-z]{2,8}\.[a-z]{2,3}$/');
-   define("passwordRegEx", "/^[a-z0-9]{5,20}$/");
-
-
+session_start();
+$regErrors = array();
+ob_start();
+if (isset($_POST['usernameAjax']) && isset($_POST['dobAjax']) && isset($_POST['emAjax']) && isset($_POST['passAjax']) && isset($_POST['csrfTokenLogin'])) {
+	$username = filter_var($_POST['usernameAjax'], FILTER_SANITIZE_STRING);
+	$userEmail = filter_var($_POST['emAjax'], FILTER_SANITIZE_STRING);
+	$userPassword = filter_var($_POST['passAjax'], FILTER_SANITIZE_STRING);
+	$userDateOfBirth = $_POST['dobAjax'];
+	$dobTemp = DateTime::createFromFormat('Y-m-d', $userDateOfBirth);
+	$dob = $dobTemp->format('Y-m-d');
+	//// bilo bi dobro staviti u try catch blok date \\\
+	$csrfFromClient = filter_var($_POST['csrfTokenLogin'], FILTER_SANITIZE_STRING);
+	define('usernameRegEx', '/^[a-z0-9]{4,13}$/');
+	define('emailRegEx', '/^[a-z0-9]+@[a-z]{2,8}\.[a-z]{2,3}$/');
+	define("passwordRegEx", "/^[a-z0-9]{5,20}$/");
 
 
 //    $wordBlockList =['select','delete', 'drop', 'true'];
@@ -27,84 +24,78 @@ if(isset($_POST['usernameAjax']) && isset($_POST['dobAjax']) && isset($_POST['em
 //        // header("Location: {$url}/contact.html");
 //    }
 
-   if(!preg_match(usernameRegEx, $username)){
-      array_push($userErrors,"Username is not valid. For username to be valid must be alpanumeric word 4 - 13 in length");
-   }
-    if(!preg_match(emailRegEx, $userEmail)){
-        array_push($userErrors,"Email is not valid For email to be valid, email must have up to 10 letters and numbers only with @gmail.com for example");
-    }
-    if(!preg_match(passwordRegEx, $userPassword)){
-        array_push($userErrors,"Password must containt letters & numbers only. Minimal password lenght is 5, maximum is 12");
-    }
-   $userPasswordSHA = sha1($userPassword);
+	if (!preg_match(usernameRegEx, $username)) {
+		array_push($regErrors, "Username is not valid. valid username must include alpanumeric word 4 - 13 in length.");
+	}
+	if (!preg_match(emailRegEx, $userEmail)) {
+		array_push($regErrors, "Email is not valid, valid email must include 10 letters and numbers only with @gmail.com for example.");
+	}
+	if (!preg_match(passwordRegEx, $userPassword)) {
+		array_push($regErrors, "Password must containt letters & numbers only, minimal password lenght is 5, maximum is 12.");
+	}
+	$userPasswordSHA = sha1($userPassword);
 
 
+	if (empty($dob) || time() < strtotime('+18 years', strtotime($dob))) {
+		array_push($regErrors, "User must be at least 18.");
+		if (time() < strtotime('+150 years', strtotime($dob))) {
+			array_push($regErrors, "Take it easy Captain America");
+		}
+	}
+	if ($_SESSION['csrf_token'] !== $csrfFromClient) {
+		array_push($regErrors, "Prevented cross site cookie forgery attack");
 
-    if(empty($dob) || time() < strtotime('+18 years', strtotime($dob))){
-        array_push($userErrors,"User must be at least 18 to rent a car as law requires it");
-        if(time() < strtotime('+130 years', strtotime($dob))){
-            array_push($userErrors,"Take it easy Captain America");
-        }
-    }
+	}
+	if (count($regErrors) !== 0) {
+		if (count($regErrors) === 1) {
+			echo json_encode($regErrors[0]);
+		} else {
 
-    if(count($userErrors)>0){
-        echo json_encode("Please enter valid data");
+			echo json_encode(implode(', ', $regErrors));
+		}
+	}
 
+	if (count($regErrors) === 0) {
+		// $_SESSION['registeredUser'] = '';
+		require('connINI.php');
 
-//        $userCredentials = array($username,$userEmail,$dob,$userPassword );
-//        $_SESSION['userCredential'] = $userCredentials;
-    }
+		try {
+			/////////////// checking if there is already user with that email \\\\\\\\\\\\\\\\\\\\\
+			$checkExistingEmail = $conn->prepare("SELECT email FROM kola.user where email =:email ;");
+			$checkExistingEmail->bindParam(":email", $userEmail);
+			$checkExistingEmail->execute();
+			if ($checkExistingEmail->rowCount() > 0) {
 
-    else {
-       // $_SESSION['registeredUser'] = '';
-        require('connINI.php');
+				$serverResponse = "Given email address is already used";
+				echo json_encode($serverResponse);
+			}
+			/////////////////// check if there is user with that username \\\\\\\\\\\\\\\\\\\\\\\\\
+			$checkExistingUsername = $conn->prepare("SELECT username FROM kola.user where username =:username ;");
+			$checkExistingUsername->bindParam(':username', $username);
+			$checkExistingUsername->execute();
+			if ($checkExistingUsername->rowCount() > 0) {
 
-        try{
-            /////////////// checking if there is already user with that email \\\\\\\\\\\\\\\\\\\\\
-            $checkExistingEmail = $conn ->prepare("SELECT email FROM kola.user where email =:email ;");
-            $checkExistingEmail ->bindParam(":email",$userEmail);
-            $checkExistingEmail ->execute();
-            if($checkExistingEmail ->rowCount()>0){
-
-                $serverResponse = "Given email address is already used";
-                echo json_encode($serverResponse);
-            }
-            /////////////////// check if there is user with that username \\\\\\\\\\\\\\\\\\\\\\\\\
-            $checkExistingUsername = $conn ->prepare("SELECT username FROM kola.user where username =:username ;");
-            $checkExistingUsername ->bindParam(':username', $username);
-            $checkExistingUsername ->execute();
-            if($checkExistingUsername ->rowCount()>0){
-
-                $serverResponse = "Given username is already used";
-                echo json_encode($serverResponse);
-            }
-            ////////// adding new user \\\\\\\\
-            if($checkExistingEmail ->rowCount()<1 && $checkExistingUsername ->rowCount()<1){
-                $insertNewUser = $conn->prepare('INSERT INTO kola.user(username,email,password,DOB)
+				$serverResponse = "Given username is already used";
+				echo json_encode($serverResponse);
+			}
+			////////// adding new user \\\\\\\\
+			if ($checkExistingEmail->rowCount() < 1 && $checkExistingUsername->rowCount() < 1) {
+				$insertNewUser = $conn->prepare('INSERT INTO kola.user(username,email,password,DOB)
                   VALUES(:username, :email,:password,:dob);');
-                $insertNewUser->bindParam(":username", $username);
-                $insertNewUser->bindParam(":email", $userEmail);
-                $insertNewUser->bindParam(":password", $userPasswordSHA);
-                $insertNewUser->bindParam(':dob', $dob);
-                $insertNewUser->execute();
+				$insertNewUser->bindParam(":username", $username);
+				$insertNewUser->bindParam(":email", $userEmail);
+				$insertNewUser->bindParam(":password", $userPasswordSHA);
+				$insertNewUser->bindParam(':dob', $dob);
+				$insertNewUser->execute();
 
-                $serverResponse = 'Your registration was successful';
-                echo json_encode($serverResponse);
-            }
-        } catch (PDOException $ex){
-            echo json_encode("Database error: {$ex}");
-        }
+				$serverResponse = 'Your registration was successful';
+				echo json_encode($serverResponse);
+			}
+		} catch (PDOException $ex) {
+			echo json_encode("Database error: {$ex}");
+		}
 
-    }
-   // $userCredentials =array($username, $userDateOfBirth, $userEmail, $userPassword);
-
-//    foreach($suggestArr as $sugArr){
-//        if(strpos($sugArr, $name)!== false){
-//            echo "{$sugArr}/";//. "<br>" . strpos($sugArr, $name);
-//        }
-//    }
-    //  http_response_code(200);
-    //  echo "Podatak iz php: {$name}";
+	}
 }
 
 

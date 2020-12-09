@@ -95,12 +95,16 @@ $.ajax('products.php', {
 //          });//addEventListner
 //         });//forEach(shoppingCart)
 //       } //fun addEventCart
+        const weather = localStorage.getItem('weather');
+        if (weather != 'null') {
+            console.log(weather);
+        }
 
         function funHtmlDynamic(data) {
             let htmlAjax = ``;
             data.forEach(p => {
-            htmlAjax +=
-                `<div class="card">
+                htmlAjax +=
+                    `<div class="card">
   <div class="card-image">
     <figure class="image is-4by3">
       <img src="${p.image}" alt="${p.brand}_${p.model}_${p.carID}">

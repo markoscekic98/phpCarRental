@@ -2,8 +2,7 @@
 session_start();
 ob_start();
 require('connINI.php');
-$adminHash = 'hN69mY#M6p^wAt4M1!@j';
-$_SESSION['admin'] = $adminHash;
+
 //$url = 'http://localhost/bulmaPHP';
 //if($_SERVER['REQUEST_METHOD'] != 'POST'){
 //	// header("Location: {$url}/login.html");
