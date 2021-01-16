@@ -1,132 +1,197 @@
 <?php
-  session_start();
-  ob_start();
-  $url = 'http://localhost/bulmaPHP';
-  if($_SERVER['REQUEST_METHOD'] != 'POST'){
-  // header("Location: {$url}/login.html");
-  }
-?>
 
+session_start();
+
+include('security/antiCSRF.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 
-<?php
-//include('include/head.php');
-?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MK International is world renown for its excellent mechanical keyboards" />
+    <meta name="csrf-token" content="<?= CSRFTokenIni() ?>">
+    <title>Kola leading car rental</title>
+    <link rel="shortcut icon" href="img/strWheel.png" id="ikonica" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <!--    <link rel="stylesheet" href="css/grid.css">-->
+    <link rel="stylesheet" href="css/stylePhp.css">
+    <!--    <link rel="stylesheet" href="css/bulma-social.min.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+</head>
+
+<body>
+
+<!--.hero-->
+<section class="hero  is-fullheight">
+	<?php include('include/header.php') ?>
 
 
+    <main class="hero-foot  center is-desktop" style="padding: 2rem;">
+        <main class="hero-foot is-mobile-only" style="max-width:99%;">
 
-<!--<body>-->
+            <div class="column abcd ">
+                <div class="center-column has-text-centered subtitle">
+                    <h2 class="title is-2 white ">Contact Form</h2>
+                    <p class='content is-small'>If you have any questions, please feel free to contact us. Thank
+                        you.</p>
+                </div>
+                <form method="post" id="contactForm">
+
+                    <div class="field">
+                        <label class="label has-text-white">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium" id="uname" name="username" type="text"
+                                   placeholder="Text input" value="">
+                            <!-- class="input is-danger" -->
+                            <span class="icon is-small is-left has-text-grey">
+                  <i class="fas fa-user"></i>
+                </span>
+                        </div>
+                        <p class="help is-danger ContactError" id="usernameError"></p>
+                    </div>
 
 
-<!--  <section class="hero  is-fullheight">-->
-<?php //  include('include/header.php');  ?>
+                    <div class="field">
+                        <label class="label has-text-white">Date of birth</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium" id="dob" name="dob" type="date" placeholder="Text input"
+                                   value="">
+                            <!-- class="input is-danger" -->
+                            <span class="icon is-small is-left has-text-grey">
+                  <i class="fa fa-map" aria-hidden="true"></i>
+                </span>
+                            <!-- <span class="icon is-small is-right">
+										<i class="fas fa-check"></i>
+									  </span> -->
+                        </div>
+                        <p class="help is-danger ContactError" id="dobError"></p>
+                    </div>
 
-<!---->
-<!--    <main class="hero-foot  center is-desktop aboutDesktopWidth" style="padding: 2rem;">-->
-<!--      <main class="hero-foot is-mobile-only" style="max-width:99%;">-->
-<!--        <div class="center-column has-text-centered subtitle centerBlack" >-->
-<!---->
-<!--           <h2 class="title is-2 white "> All data from database</h2>-->
-<!--           <h2 class="title is-3 white">Insert car brends </h2>-->
-<!--           <form method="post" name="carBrendInserting" action="--><?php ///*echo $_SERVER['PHP_SELF']; */?><!--">-->
-<!--           <input type="text" name='brand' placeholder="Car brends"></br>-->
-<!--           <input type="submit" name="brendSubmit" valued="add brend">-->
-<!--           <img src="img/cars/Audi-Q5.jpg" width="90" height="20">-->
-<!--           </form>-->
-<!--<script> console.log("hi"); </script>-->
-        <?php
-            /// privremeni ajax za dohvatanje podataka iz forme preko ajaxa \\\\\
-//
-//
-//if(isset($_POST['username']) && isset($_POST['dob']) && isset ($_POST['email']) && isset($_POST['password'])){
-//
-//
-//    $username = $_POST['username'];
-//    $dobStr = $_POST['dob'];
-//    $dateFormat = 'Y-m-d';
-//    $dob = DateTime::createFromFormat($dateFormat, $dobStr);
-//    $dobForEcho = $dob->format('Y-m-d');
-//    $dataTypeDobForEcho = gettype($dobForEcho);
-//    $email = $_POST['email'];
-//    $password = $_POST['password'];
-        // echo "<script>console.log('{$dobForEcho}, {$dataTypeDobForEcho}')</script>";
-   // echo "{$username}  {$dobForEcho} {$email} {$password}";
-//
-//    }   else {   // header("Location: {$url}/login.html");
-//        }
-        require('connINI.php');
-    try {
-        $datesql = $conn->prepare("insert into temp_date(temp_date) values(:date);");
-        $datesql->bindParam(":date" , $dobForEcho);
-        $datesql->execute();
-    }  catch (PDOException $exception){
-          echo "Greska se desila zbog: {$exception}";
-    }
+                    <div class="field">
+                        <label class="label has-text-white">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium" id="email" name="email" type="email"
+                                   placeholder="Email input" value="">
+                            <!-- class="input is-danger" -->
+                            <span class="icon is-small is-left has-text-grey">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                            <span class="icon is-small is-right">
+                  <!-- <i class="fas fa-exclamation-triangle emailError"></i> -->
+                </span>
+                        </div>
+                        <p class="help is-danger ContactError" id="emailError"></p>
+                    </div>
 
-      /* ------------------------------------ vec bilo zakomentarisano(odavde) ------------------------------------*/
-//       $showData = $conn->query("select   car_brand.brand,  car_model.model, car.image, car.initialPriceCar
-//                    from (car inner join car_model ON car.carModelID = car_model.carModelID) inner join  car_brand on  car_model.carBrandID = car_brand.carBrandID;");
-//        $showData->execute();
-//        if($showData->rowCount()>0){
-//            echo "<table id='tableDataDataBase'>";
-//            foreach ($showData as $data) {
-//                echo "
-//                    <tr>
-//                        <td><img src='{$data['image']}' width='50px' height='50px'></td>
-//                        <td>{$data['brand']}    {$data['model']}</td>
-//                        <td>$ {$data['initialPriceCar']}  </td>
-//                    </tr>"; // echo "<script>console.log('{$data['brand']}');</script>";
-//            }//foreach
-//            echo "</table>";
-//        }//if
-        /* ------------------------------------ vec bilo zakomentarisano(dovde) ------------------------------------*/
-        ?>
-<!--        </div>-->
-<!--        <hr class="devider"-->
-<!--          style="background: linear-gradient(90deg, rgba(0,212,255,0.6110644086990165) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,0.61) 100%);">-->
-<!--        <div class="center-column abcd" id="autor" style="margin-top:5%">-->
-<!--          <h3 class="title center is-3 whiteText">Author</h3><br>-->
-<!--          <div class="tiles center ">-->
-<!--            <div class="tile is-15 ">-->
-<!--           -->
-<!--              <div class="tile is-parent is-8 ">-->
-<!--                <article class="tile is-child ">-->
-<!---->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <p class="subtitle is-4 whiteText">Marko Scekic</p>-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <p class="subtitle is-4 whiteText">Broj Indeksa: <span class=""> 331/17<span></p>-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <p class="subtitle is-4 whiteText">This website is built for school course 'Web Programiranje 2'-->
-<!--                      </p>-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!---->
-<!--                </article>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </main>-->
-<!--    </main>-->
-<!---->
-<!--   https://aldi.github.io/bulma-social/ for favicons -->
-<!--    --><?php //  include('include/footer.php');    ?>
-<!--  </section>-->
-<!--  <script src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
-<!--  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>-->
-<!--  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>-->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>-->
-<!--  <script type="text/javascript" src="js/script.js"></script>-->
-<!--</body>-->
-<!---->
-<!--</html>-->
+                    <div class="field">
+                        <label class="label has-text-white">Password</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium " id="pass" name="password" type="password"
+                                   placeholder="Text input" value="">
+                            <!-- class="input is-danger" -->
+                            <span class="icon is-small is-left has-text-grey">
+                  <i class="fas fa-lock"></i>
+                </span>
+                            <!-- <span class="icon is-small is-right">
+										<i class="fas fa-check"></i>
+									  </span> -->
+                        </div>
+                        <p class="help is-danger ContactError" id="passError"></p>
+                    </div>
+
+                    <div class="field">
+                        <div class="control center-column">
+                            <input type="submit" class="button" name='submitInfo' id="submitInfo" value="Submit">
+                            <!-- <button class="button is-link">Help</button> -->
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <hr class="devider"
+                style="background: linear-gradient(90deg, rgba(0,212,255,0.6110644086990165) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,0.61) 100%);">
+            <!-- <div class="column abcd" style="margin-top:5%">
+			  <div id="a" class="center-column has-text-centered subtitle">
+				<h2 class="title is-2 white">MK International Co., Ltd</h2> <br>
+			  </div>
+			  <ul>
+				<li style="padding: 0.75rem;">
+				  <p><i class="fas fa-building "></i><span class="has-text-weight-bold"> Head Office</span>: No.381,
+					Yangguang St., Taipei City, Taiwan </p>
+				</li>
+				<li style="padding: 0.75rem;">
+				  <p> <i class="fas fa-wrench"></i><span class="has-text-weight-bold"> Maintance Departmen</span>: No.381,
+					Yangguang St., Taipei City, Taiwan </p>
+				</li>
+				<li style="padding: 0.75rem;">
+				  <p> <i class="fa fa-envelope"></i><span class="has-text-weight-bold"> Mailbox</span>:
+					support@mkchannel.com</p>
+				</li>
+				<li style="padding: 0.75rem;">
+				  <p><i class="fa fa-phone-square is-danger"></i><span class="has-text-weight-bold"> Phone</span>:
+					+886-2-2797-7288 </p>
+				</li>
+			  </ul>
+			</div> -->
+        </main>
+    </main>
+
+    <!-- https://aldi.github.io/bulma-social/ for favicons -->
+    <div class="hero-foot" id="footerBoja">
+        <nav class="tabs">
+            <div class="container center-column white">
+                <ul>
+                    <li>
+              <span class="icon is-medium">
+                <i class="fab fa-linkedin"></i>
+                <span>
+                    </li>
+                    <li>
+              <span class="icon is-medium ">
+                <i class="fab fa-github"></i>
+              </span>
+                    </li>
+                    <li>
+                        <a id="bulma" href="https://bulma.io">
+                            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128"
+                                 height="24">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documentatio.docx">
+                <span class="icon is-medium">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                        </a>
+                    </li>
+
+                    <li>
+              <span class="icon is-medium">
+                <i class="fas fa-user-shield"></i>
+              </span>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+<script type="text/javascript" src="js/scriptRegister.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
