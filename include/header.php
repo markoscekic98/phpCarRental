@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar is-warning" id="navBoja" role="navigation" aria-label="Main navigation">
+    <nav class="navbar is-warning mb-3" id="navBoja" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="navbar-brand is-tablet ">
                 <a href="index.html"><img src="img/strWheel.png" id='mkSwitch' width="90" height="20"></a>
@@ -41,13 +41,21 @@
                 <div class="navbar-end">
                     <?php   //if($SESSION['log']){}
                     ?>
-                    <div class="button is-info ReLoButtons">
-                        <a href="login.html"  class="navbar-item has-text-white">
-                            <p>Login</p></a>
-                    </div>
-                    <div class="button is-success ReLoButtons">
-                        <a href="contact.html"  class="navbar-item has-text-white">
-                            <p>Register</p></a>
+<!--                    <div class="button is-info ReLoButtons">-->
+<!--                        <a href="login.html"  class="navbar-item has-text-white">-->
+<!--                            <p>Login</p></a>-->
+<!--                    </div>-->
+<!--                    <div class="button is-success ReLoButtons">-->
+<!--                        <a href="contact.html"  class="navbar-item has-text-white">-->
+<!--                            <p>Register</p></a>-->
+<!--                    </div>-->
+                    <div class="buttons ReLoButtons ">
+                        <a href="login.php" >
+                            <button class="button is-info is-light mx-1" id="showUsersTable">Login</button>
+                        </a>
+                        <a href="registration.php">
+                            <button class="button  is-info is-light mx-1 " id="showUsersTable">Registration</button>
+                        </a>
                     </div>
                 </div>
             </div>

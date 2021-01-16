@@ -66,20 +66,27 @@
 $arr_file_types = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
 if(isset($_FILES['file'])) {
 	$fileGotten = $_FILES['file']['name'];
-//if (!(in_array($_FILES['file']['type'], $arr_file_types))) {
-//	echo "false";
-//	return;
-//}
+if (in_array($_FILES['file']['type'], $arr_file_types)) {
+	$destination_path = getcwd().DIRECTORY_SEPARATOR;
+	$target_path = $destination_path . 'uploads/carPic//'. basename($_FILES['file']['name']);
+	move_uploaded_file($_FILES['file']['tmp_name'], $target_path);
+	echo json_encode("success, " . $fileGotten);
+} else{
+	echo json_encode("Not allowed file extension");
+}
 //
 //if (!file_exists('uploads')) {
 //	mkdir('uploads', 0777);
 //}
 
-//move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);
+//move_uploaded_file($_FILES['file']['tmp_name'], 'uploads' . $_FILES['file']['name']);
+//	$destination_path = getcwd().DIRECTORY_SEPARATOR;
+//	$target_path = $destination_path . 'uploads/carPic//'. basename($_FILES['file']['name']);
+//	move_uploaded_file($_FILES['file']['tmp_name'], $target_path);
+//	echo json_encode("success, " . $fileGotten);
 
-	echo json_encode("success, " . $fileGotten);
 }
 else{
-	echo json_encode("fail, no files");
+	echo json("fail, no files");
 }
-die();
+//die();

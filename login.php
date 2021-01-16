@@ -9,91 +9,29 @@ if (!isset($_SESSION['adminLogin'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MK International is world renown for its excellent mechanical keyboards"/>
+    <meta name="description" content="MK International is world renown for its excellent mechanical keyboards" />
     <meta name="csrf-token" content="<?= CSRFTokenIni() ?>">
     <title>Kola leading car rental</title>
-    <link rel="shortcut icon" href="img/strWheel.png" id="ikonica" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="shortcut icon" href="img/strWheel.png" id="ikonica" type="image/x-icon" />
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
-    <!-- <link rel="stylesheet" href = "https://www.jsdelivr.com/package/npm/bulma"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/helpers.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <!--    <link rel="stylesheet" href="css/grid.css">-->
     <link rel="stylesheet" href="css/stylePhp.css">
-    <link rel="stylesheet" href="css/bulma-social.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--    <link rel="stylesheet" href="css/bulma-social.min.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 </head>
+
 
 <body>
 
 <!--.hero-->
 <section class="hero  is-fullheight">
-    <header>
-        <nav class="navbar is-warning" id="navBoja" role="navigation" aria-label="Main navigation">
-            <div class="container">
-                <div class="navbar-brand is-tablet ">
-                    <a href="index.html"><img src="img/strWheel.png" id='mkSwitch' alt="Wheel picture" width="90px"
-                                              height="20px"></a>
-                    <table id="headerBrend">
-                        <tr>
-                            <td><h1 class="title is-2 navPBrand" style="color:white">Kola</h1>
-                            <td>
-                        </tr>
-                        <tr>
-                            <td><p class="is-small">Car rental platform</p></td>
-                        </tr>
-                    </table>
-                    <div class="navbar-burger" data-target="navbar">
-                        <span style="color:white"></span>
-                        <span style="color:white"></span>
-                        <span style="color:white"></span>
-                    </div>
-                </div>
-                <div class="navbar-menu navBarAnchor" id="navbar" style="margin-left: 20%;">
-                    <div class="navbar-start">
-                        <div class="navbar-item AboutHover">
-                            <a href="products.html">
-                                <p>Vehicles</p>
-                            </a>
-
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable AboutHover ">
-                            <a href="registration.php" class="navbar-link aPreventDefault">
-                                <p>Contact</p>
-                            </a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="registration.php" class="navbar-item burgerColor">Form</a>
-                                <a href="registration.php#a" class="navbar-item burgerColor">Info</a>
-
-                            </ul>
-                        </div>
-                        <div class="navbar-item AboutHover">
-                            <a href="about.html">
-                                <p>About Us</p>
-                            </a>
-
-                        </div>
-
-                    </div>
-                    <div class="navbar-end" id="loginRegisterButtons">
-                        <div class="button is-info ReLoButtons">
-                            <a href="login.php" class="navbar-item has-text-white">
-                                <p>Login</p></a>
-                        </div>
-                        <div class="button is-success ReLoButtons">
-                            <a href="registration.php" class="navbar-item has-text-white">
-                                <p>Register</p></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-    </header>
+	<?php include('include/header.php') ?>
 
 
     <main class="hero-foot  center is-desktop" style="padding: 2rem;">

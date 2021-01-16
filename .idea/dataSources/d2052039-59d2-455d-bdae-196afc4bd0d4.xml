@@ -2,7 +2,7 @@
 <dataSource name="kola@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.18">
     <root id="1">
-      <ServerVersion>10.4.11</ServerVersion>
+      <ServerVersion>10.4.17</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
@@ -1096,7 +1096,6 @@
     <column id="348" parent="334" name="image">
       <Position>8</Position>
       <DataType>varchar(60)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="349" parent="334" name="color">
@@ -1200,84 +1199,109 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="366" parent="337" name="PRIMARY">
+    <index id="366" parent="337" name="carID">
+      <ColNames>carID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="367" parent="337" name="userID">
+      <ColNames>userID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="368" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>rentID</ColNames>
+      <ColNames>rentID
+carID
+userID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="367" parent="338" name="userID">
+    <foreign-key id="369" parent="337" name="carID">
+      <ColNames>carID</ColNames>
+      <RefTableName>car</RefTableName>
+      <RefColNames>carID</RefColNames>
+    </foreign-key>
+    <foreign-key id="370" parent="337" name="userID">
+      <ColNames>userID</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefColNames>userID</RefColNames>
+    </foreign-key>
+    <column id="371" parent="338" name="userID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="338" name="username">
+    <column id="372" parent="338" name="username">
       <Position>2</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="369" parent="338" name="email">
+    <column id="373" parent="338" name="email">
       <Position>3</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="370" parent="338" name="password">
+    <column id="374" parent="338" name="password">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="371" parent="338" name="dob">
+    <column id="375" parent="338" name="dob">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="372" parent="338" name="PRIMARY">
+    <column id="376" parent="338" name="adminToken">
+      <Position>6</Position>
+      <DataType>varchar(16)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="377" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="373" parent="339" name="userDeleteLogID">
+    <column id="378" parent="339" name="userDeleteLogID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="374" parent="339" name="userID">
+    <column id="379" parent="339" name="userID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="375" parent="339" name="date">
+    <column id="380" parent="339" name="date">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="376" parent="339" name="PRIMARY">
+    <key id="381" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userDeleteLogID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="377" parent="340" name="user_login_logID">
+    <column id="382" parent="340" name="user_login_logID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="378" parent="340" name="userID">
+    <column id="383" parent="340" name="userID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="379" parent="340" name="logInTime">
+    <column id="384" parent="340" name="logInTime">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -1285,19 +1309,19 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>current_timestamp()</OnUpdate>
     </column>
-    <column id="380" parent="340" name="logOutTime">
+    <column id="385" parent="340" name="logOutTime">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="381" parent="340" name="user_ip">
+    <column id="386" parent="340" name="user_ip">
       <Position>5</Position>
       <DataType>int(4) unsigned|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="382" parent="340" name="PRIMARY">
+    <key id="387" parent="340" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_login_logID</ColNames>
       <Primary>1</Primary>

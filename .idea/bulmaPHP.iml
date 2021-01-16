@@ -18,5 +18,6 @@
     <orderEntry type="module" module-name="nedelja4" />
     <orderEntry type="module" module-name="nedelja9" />
     <orderEntry type="module" module-name="PHPauditorne2020" />
+    <orderEntry type="library" name="bulma-modal-fx" level="application" />
   </component>
 </module>

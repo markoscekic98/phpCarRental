@@ -2,6 +2,7 @@
 session_start();
 $loginErrors = array();
 ob_start();
+//admin login credentials: markoscek98, marqu9988
 if (isset($_POST['usernameLogin']) && isset($_POST['passwordLogin']) && isset($_POST['csrfTokenLogin'])) {
 
 

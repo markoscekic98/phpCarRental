@@ -13,7 +13,7 @@
               </span>
                 </li>
                 <li>
-                    <a id="bulma" href="https://bulma.io">
+                    <a id="bulma" href="https://bulma.io/images/made-with-bulma--semiwhite.png">
                     </a>
                 </li>
                 <li>

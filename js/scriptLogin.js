@@ -1,7 +1,4 @@
 document.querySelector('#loginForm').addEventListener('submit', ev => {
-    //document.querySelector('form').reset();
-    // this.preventDefault();
-    console.log("logovanje");
 
     ev.preventDefault();
     var dataForm = [];

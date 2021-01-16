@@ -20,7 +20,7 @@ if(isset($_SESSION['userLoggedIN']) && isset($_SESSION['userLogInTimestamp'])) {
 		unset($_SESSION['userLogInTimestamp']);
 		session_destroy();
 
-		//header("Location: products.html");
+		//header("Location: products.php");
 	}   catch (PDOException $logoutErr){
 		echo "Logout Error";
 	}

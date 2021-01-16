@@ -1,4 +1,4 @@
-
+/* @import "../node_modules/bulma/css/bulma.min.css"; */
 header table tr{
     border-bottom: 0 solid rgba(255, 0, 0, 0);
 }
@@ -299,13 +299,17 @@ header table tr{
 .iconGrey{
     color: rgb(56, 56, 56);
 }
-.adminCarManipulationButtons{
-    margin-bottom: 2rem;
-}
 #transparrentTr{
     border:1px solid rgba(255, 255, 255, 0) !important;
 }
 #tableVisible{
     margin-top:2rem;
 
+}
+.adminTiles{
+    /*background-color: olive;*/
+    height: 20rem;
+}
+.darker{
+    background-color: rgba(0,0,0,0.6);
 }
