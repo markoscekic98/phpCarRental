@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/experiments" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6663b649-ab8f-4610-99e6-926451815e49" name="Default Changelist" comment="New branch">
+      <change afterPath="$PROJECT_DIR$/Obsolete_registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/adminCar_Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/adminUser_Show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarDelete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminUserTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carPicScreenshot (5).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/csrf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/link.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/php8Features.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/showAllSession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsAjax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/antiCSRF.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadsScreenshot (3).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCar.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_New.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetBrand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetFeatures.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminCarUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_UpdatePrice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminGetAllCars.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_Show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminGetCollumns.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_ShowCollumns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminAddCar.js" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminRemoveCar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bulma-social.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bulma.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bulma.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylePhp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylePhp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/Debug.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/HtmlDocument.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/HtmlNode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/HtmlWeb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/constants.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/custom_theme/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/disable.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/enable.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/log.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/log_once.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/setDebugHandler.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__call.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__construct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__debugInfo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__destruct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__get.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__toString.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/as_text_node.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/childNodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_skip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_until.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_until_char.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/createElement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/createTextNode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/decode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/dump.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/expect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/find.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/firstChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementById.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementByTagName.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementsById.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementsByTagName.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/lastChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/link_nodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/load.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/loadFile.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse_attr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse_charset.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/prepare.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/read_tag.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/remove_callback.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/remove_noise.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/restore_noise.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/save.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/search_noise.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/set_callback.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/skip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__call.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__construct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__debugInfo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__destruct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__get.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__isset.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__set.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__toString.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__unset.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/addClass.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/appendChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/childNodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/clear.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/convert_text.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/definitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/dump.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/dump_node.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/expect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/find.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/find_ancestor_tag.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/firstChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getAllAttributes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getAttribute.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementById.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementByTagName.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementsById.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementsByTagName.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/get_display_size.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasAttribute.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasChildNodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasClass.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/innertext.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_block_element.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_inline_element.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_utf8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/lastChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/makeup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/match.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/nextSibling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/nodeName.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/outertext.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parent.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parentNode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parse_selector.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/previousSibling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/remove.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeAttribute.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeChild.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeClass.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/save.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/seek.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/setAttribute.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/text.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/xmltext.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/constants.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/extra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/faq/0001.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/accessing-element-attributes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/adding-nodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/creating-dom-objects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/customizing-parsing-behavior.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/finding-html-elements.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/saving-dom-objects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/traversing-dom-tree.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/quick-start.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/requirements.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/manual/mkdocs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/simple_html_dom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScrape/weatherScraper.php" beforeDir="false" />
+    </list>
+    <list id="63ed1e82-941e-4787-8c93-d09d407b55de" name="Revert &quot;New branch&quot;" comment="Revert &quot;New branch&quot;&#10;&#10;This reverts commit 3c736326" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="markoscekic98 &lt;markoscekic998@gmail.com&gt;" />
+        <option value="mrk.sck" />
+        <option value="mar.sck" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="removing car" pattern="file[bulmaPHP]:*/" />
+  </component>
+  <component name="PhpDebugGeneral" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost/bulmaPHP" id="395e0159-1fd0-45ba-8430-1d07c5b5cee0" name="localhost" use_path_mappings="true" />
+      <server host="localhost" id="0bee4c0d-5a14-414d-af4c-2f48f7345e80" name="localhost (1)" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1Z7XxsOBV4bM1HYoPjbC3kCUuW3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="removing car" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHPauditorne2020" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bulmaPHP\weather" />
+      <recent name="C:\xampp\htdocs\bulmaPHP\adminModules" />
+      <recent name="C:\xampp\htdocs\bulmaPHP" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git add ." />
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.adminCarAdd_New.php">
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="adminCarAdd_New.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/adminModules/adminCarAdd_New.php">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.adminCarAdd_New.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MARIADB.CreateComplete" value="ConstraintContext=CONSTRAINT_IN_TABLE" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6663b649-ab8f-4610-99e6-926451815e49" name="Default Changelist" comment="" />
+      <created>1584191486767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584191486767</updated>
+      <workItem from="1584191489780" duration="208000" />
+      <workItem from="1584191755432" duration="289000" />
+      <workItem from="1584192066894" duration="807000" />
+      <workItem from="1584192892975" duration="13079000" />
+      <workItem from="1584219811717" duration="3591000" />
+      <workItem from="1584546992813" duration="12241000" />
+      <workItem from="1584609275489" duration="2469000" />
+      <workItem from="1584612307409" duration="43000" />
+      <workItem from="1584612396063" duration="12327000" />
+      <workItem from="1584692680175" duration="13877000" />
+      <workItem from="1584790593611" duration="597000" />
+      <workItem from="1584806971261" duration="17390000" />
+      <workItem from="1584877967509" duration="5553000" />
+      <workItem from="1584892960615" duration="262000" />
+      <workItem from="1584923221941" duration="1558000" />
+      <workItem from="1584973633034" duration="13608000" />
+      <workItem from="1585054588030" duration="998000" />
+      <workItem from="1585062224272" duration="7683000" />
+      <workItem from="1585254942804" duration="584000" />
+      <workItem from="1585351794712" duration="705000" />
+      <workItem from="1585483511591" duration="6199000" />
+      <workItem from="1585584972022" duration="1931000" />
+      <workItem from="1585589485078" duration="305000" />
+      <workItem from="1585589816997" duration="9013000" />
+      <workItem from="1585682592074" duration="14689000" />
+      <workItem from="1585741449526" duration="4888000" />
+      <workItem from="1585827479978" duration="2041000" />
+      <workItem from="1586778887680" duration="532000" />
+      <workItem from="1586779462183" duration="2610000" />
+      <workItem from="1586782109685" duration="3570000" />
+      <workItem from="1586983780745" duration="2652000" />
+      <workItem from="1586990912345" duration="1644000" />
+      <workItem from="1587066164653" duration="2404000" />
+      <workItem from="1587121437953" duration="3854000" />
+      <workItem from="1587221008779" duration="11109000" />
+      <workItem from="1587307150075" duration="2492000" />
+      <workItem from="1587328636457" duration="8369000" />
+      <workItem from="1587384126006" duration="14179000" />
+      <workItem from="1587453358034" duration="1352000" />
+      <workItem from="1587466907507" duration="7495000" />
+      <workItem from="1587552257824" duration="4322000" />
+      <workItem from="1587653452062" duration="6892000" />
+      <workItem from="1587741903913" duration="1150000" />
+      <workItem from="1587747837609" duration="7320000" />
+      <workItem from="1587810425557" duration="10341000" />
+      <workItem from="1587910172593" duration="585000" />
+      <workItem from="1587977932034" duration="2265000" />
+      <workItem from="1588070505051" duration="594000" />
+      <workItem from="1588260888313" duration="1676000" />
+      <workItem from="1588326906712" duration="1812000" />
+      <workItem from="1588407989211" duration="2946000" />
+      <workItem from="1588450652773" duration="6408000" />
+      <workItem from="1588501452475" duration="567000" />
+      <workItem from="1588520714870" duration="577000" />
+      <workItem from="1588870594693" duration="15096000" />
+      <workItem from="1589290775733" duration="559000" />
+      <workItem from="1589455975643" duration="15442000" />
+      <workItem from="1589542738030" duration="4018000" />
+      <workItem from="1589799673009" duration="5805000" />
+      <workItem from="1589991849815" duration="1124000" />
+      <workItem from="1590061047833" duration="11157000" />
+      <workItem from="1590235639067" duration="11293000" />
+      <workItem from="1590348182106" duration="1088000" />
+      <workItem from="1590581529244" duration="3575000" />
+      <workItem from="1590675061105" duration="130000" />
+      <workItem from="1590840566837" duration="1723000" />
+      <workItem from="1590931755167" duration="573000" />
+      <workItem from="1590953249154" duration="1266000" />
+      <workItem from="1591022442239" duration="3146000" />
+      <workItem from="1591196403667" duration="586000" />
+      <workItem from="1591543908055" duration="3970000" />
+      <workItem from="1594227879668" duration="4151000" />
+      <workItem from="1594399151572" duration="4453000" />
+      <workItem from="1594579925212" duration="5177000" />
+      <workItem from="1605637701763" duration="9548000" />
+      <workItem from="1605791376052" duration="642000" />
+      <workItem from="1605906081860" duration="4467000" />
+      <workItem from="1606575187695" duration="301000" />
+      <workItem from="1606672504721" duration="18778000" />
+      <workItem from="1606914148579" duration="4275000" />
+      <workItem from="1606995682746" duration="2088000" />
+      <workItem from="1607517766328" duration="579000" />
+      <workItem from="1607524858395" duration="5277000" />
+      <workItem from="1607877067626" duration="2739000" />
+      <workItem from="1608036013541" duration="17080000" />
+      <workItem from="1608384445460" duration="9003000" />
+      <workItem from="1608495920747" duration="2443000" />
+      <workItem from="1609185956865" duration="888000" />
+      <workItem from="1610455560482" duration="1279000" />
+      <workItem from="1610457495397" duration="593000" />
+      <workItem from="1610465544218" duration="2444000" />
+      <workItem from="1610638610324" duration="5402000" />
+      <workItem from="1610735524945" duration="4985000" />
+      <workItem from="1610815008971" duration="5603000" />
+    </task>
+    <task id="LOCAL-00001" summary="New branch">
+      <created>1607531441571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607531441572</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/experiments" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="adding new car is fully implemented" />
+    <MESSAGE value="New branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="New branch" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="55" y="-969" key="#Inspections" timestamp="1607530292404">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state x="55" y="-969" key="#Inspections/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1607530292404" />
+    <state x="169" y="-858" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608043153184">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state x="169" y="-858" key="#com.intellij.fileTypes.FileTypeChooser/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1608043153184" />
+    <state x="363" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1610456892402">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1610456892402" />
+    <state x="306" y="25" width="756" height="706" key="CommitChangelistDialog2" timestamp="1610833024291">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="306" y="25" width="756" height="706" key="CommitChangelistDialog2/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1607531439166" />
+    <state x="306" y="25" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1610833024291" />
+    <state x="-265" y="150" width="1201" height="653" key="DiffContextDialog" timestamp="1610833659109">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="-247" y="-987" width="1350" height="678" key="DiffContextDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610653477715" />
+    <state x="-265" y="150" width="1201" height="653" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1610833659109" />
+    <state width="1039" height="216" key="GridCell.Tab.0.bottom" timestamp="1610654388114">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1039" height="216" key="GridCell.Tab.0.bottom/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610654388114" />
+    <state width="1039" height="216" key="GridCell.Tab.0.center" timestamp="1610654388114">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1039" height="216" key="GridCell.Tab.0.center/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610654388114" />
+    <state width="1039" height="216" key="GridCell.Tab.0.left" timestamp="1610654388114">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1039" height="216" key="GridCell.Tab.0.left/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610654388114" />
+    <state width="1039" height="216" key="GridCell.Tab.0.right" timestamp="1610654388114">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1039" height="216" key="GridCell.Tab.0.right/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610654388114" />
+    <state x="537" y="313" key="NewPhpFileDialog" timestamp="1610821400356">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="264" y="-728" key="NewPhpFileDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610558022104" />
+    <state x="537" y="313" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1610821400356" />
+    <state x="604" y="352" key="NewPhpFileDialog/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606746471389" />
+    <state x="500" y="267" key="VCS.ChangelistChooser" timestamp="1607878287093">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="500" y="267" key="VCS.ChangelistChooser/0.0.1366.768@0.0.1366.768" timestamp="1607878287093" />
+    <state x="21" y="-933" key="Vcs.Push.Dialog.v2" timestamp="1607531697550">
+      <screen x="-340" y="-1080" width="1536" height="864" />
+    </state>
+    <state x="21" y="-933" key="Vcs.Push.Dialog.v2/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1607531697550" />
+    <state x="553" y="101" width="286" height="565" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610834045611">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="553" y="101" width="286" height="565" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1610834045611" />
+    <state x="-219" y="94" width="1201" height="603" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610833659109">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="-247" y="-987" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1607530069925" />
+    <state x="-219" y="94" width="1201" height="603" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1610833659109" />
+    <state x="-77" y="37" width="1201" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610835900682">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="-247" y="-987" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610746021223" />
+    <state x="-77" y="37" width="1201" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1610835900682" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606858109870" />
+    <state x="1913" y="-147" width="760" height="775" maximized="true" key="dock-window-1" timestamp="1605728281946">
+      <screen x="1920" y="-147" width="1366" height="768" />
+    </state>
+    <state x="1913" y="-147" width="760" height="775" maximized="true" key="dock-window-1/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1605728281946" />
+    <state x="1913" y="-147" width="697" height="775" key="dock-window-2" timestamp="1605792072090">
+      <screen x="1920" y="-147" width="1366" height="768" />
+    </state>
+    <state x="1913" y="-147" width="697" height="775" key="dock-window-2/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1605792072090" />
+    <state x="426" y="116" width="555" height="652" key="find.popup" timestamp="1610821383207">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="139" y="-950" width="676" height="734" key="find.popup/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1608124496620" />
+    <state x="426" y="116" width="555" height="652" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1610821383207" />
+    <state x="479" y="151" width="577" height="562" key="find.popup/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606748459785" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1608395665840">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="41" y="-886" width="672" height="677" key="run.anything.popup/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1608124154355" />
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1608395665840" />
+    <state x="523" y="242" width="491" height="383" key="scopes" timestamp="1606747421773">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="523" y="242" width="491" height="383" key="scopes/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606747421773" />
+    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup" timestamp="1607877364642">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1607877364642" />
+  </component>
+</project>
