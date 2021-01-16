@@ -1,0 +1,11 @@
+/.idea
+/.tmp.drivedownload
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+/uploads
+carPicScreenshot (5).png
+uploadsScreenshot (3).pngconfig.py
