@@ -14,4 +14,16 @@
 function funDeleteCar(carID) {
  let carIdParam = carID;
  console.log(carIdParam);
+ $.ajax('adminModules/adminCar_Delete.php',{
+  method:'post',
+  contentType: false,
+  processData: false,
+  data:{
+   csrf:csrfToken,
+   carID_toDelete:carIdParam
+  },
+  success(response){
+   console.log(`Server response: ${response}`);
+  }
+ });
 }
