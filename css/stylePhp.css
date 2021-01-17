@@ -133,8 +133,7 @@ header table tr{
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 35%);
 }
 
-body p,
-h2,
+
 .white {
     color: white;
 }
@@ -310,6 +309,7 @@ header table tr{
     /*background-color: olive;*/
     height: 20rem;
 }
-.darker{
-    background-color: rgba(0,0,0,0.6);
-}
+/*.darker{*/
+/*    background-color: rgba(0,0,0,0.6);*/
+/*}*/
+

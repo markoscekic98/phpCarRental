@@ -27,185 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6663b649-ab8f-4610-99e6-926451815e49" name="Default Changelist" comment="New branch">
-      <change afterPath="$PROJECT_DIR$/Obsolete_registration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminModules/adminCar_Delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminModules/adminUser_Show.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminModules/scripts/adminUserTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carPicScreenshot (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/csrf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/link.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/php8Features.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiments/showAllSession.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productsAjax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/antiCSRF.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadsScreenshot (3).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminModules/scripts/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCar.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_New.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetBrand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetFeatures.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminAddCarGetModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCarAdd_GetModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminCarUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_UpdatePrice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminGetAllCars.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_Show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/adminGetCollumns.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_ShowCollumns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminAddCar.js" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminRemoveCar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bulma-social.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bulma.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bulma.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bulma.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/adminCar_Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/adminCar_Delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminCarDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminModules/scripts/adminCarTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/adminModules/scripts/adminCarTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylePhp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylePhp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scriptLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scriptProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scriptRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginAjax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationAjax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/Debug.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/HtmlDocument.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/HtmlNode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/HtmlWeb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/constants.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/custom_theme/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/disable.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/enable.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/log.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/log_once.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/Debug/setDebugHandler.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__call.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__construct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__debugInfo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__destruct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__get.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/__toString.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/as_text_node.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/childNodes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_skip.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_until.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/copy_until_char.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/createElement.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/createTextNode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/decode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/dump.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/expect.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/find.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/firstChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementById.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementByTagName.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementsById.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/getElementsByTagName.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/lastChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/link_nodes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/load.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/loadFile.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse_attr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/parse_charset.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/prepare.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/read_tag.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/remove_callback.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/remove_noise.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/restore_noise.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/save.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/search_noise.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/set_callback.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlDocument/skip.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__call.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__construct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__debugInfo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__destruct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__get.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__isset.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__set.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__toString.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/__unset.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/addClass.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/appendChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/childNodes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/clear.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/convert_text.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/definitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/dump.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/dump_node.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/expect.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/find.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/find_ancestor_tag.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/firstChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getAllAttributes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getAttribute.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementById.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementByTagName.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementsById.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/getElementsByTagName.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/get_display_size.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasAttribute.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasChildNodes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/hasClass.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/innertext.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_block_element.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_inline_element.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/is_utf8.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/lastChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/makeup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/match.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/nextSibling.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/nodeName.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/outertext.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parent.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parentNode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/parse_selector.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/previousSibling.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/remove.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeAttribute.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeChild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/removeClass.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/save.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/seek.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/setAttribute.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/text.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/HtmlNode/xmltext.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/api/constants.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/extra.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/faq/0001.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/accessing-element-attributes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/adding-nodes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/creating-dom-objects.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/customizing-parsing-behavior.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/finding-html-elements.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/saving-dom-objects.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/manual/traversing-dom-tree.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/quick-start.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/docs/requirements.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/manual/mkdocs.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/simple_html_dom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScrape/weatherScraper.php" beforeDir="false" />
     </list>
     <list id="63ed1e82-941e-4787-8c93-d09d407b55de" name="Revert &quot;New branch&quot;" comment="Revert &quot;New branch&quot;&#10;&#10;This reverts commit 3c736326" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,13 +86,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="removing car" />
+    <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHPauditorne2020" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Images" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -410,7 +238,9 @@
       <workItem from="1610465544218" duration="2444000" />
       <workItem from="1610638610324" duration="5402000" />
       <workItem from="1610735524945" duration="4985000" />
-      <workItem from="1610815008971" duration="5603000" />
+      <workItem from="1610815008971" duration="7582000" />
+      <workItem from="1610842702867" duration="50000" />
+      <workItem from="1610895085388" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="New branch">
       <created>1607531441571</created>
@@ -501,6 +331,10 @@
     <state x="264" y="-728" key="NewPhpFileDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610558022104" />
     <state x="537" y="313" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1610821400356" />
     <state x="604" y="352" key="NewPhpFileDialog/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606746471389" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1610840932859">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1610840932859" />
     <state x="500" y="267" key="VCS.ChangelistChooser" timestamp="1607878287093">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -518,11 +352,11 @@
     </state>
     <state x="-247" y="-987" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1607530069925" />
     <state x="-219" y="94" width="1201" height="603" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1610833659109" />
-    <state x="-77" y="37" width="1201" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610835900682">
+    <state x="-77" y="37" width="1201" height="603" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610841183327">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="-247" y="-987" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-340.-1080.1536.864/0.0.1366.768@-340.-1080.1536.864" timestamp="1610746021223" />
-    <state x="-77" y="37" width="1201" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1610835900682" />
+    <state x="-77" y="37" width="1201" height="603" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1610841183327" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864/1920.-147.1366.768@0.0.1536.864" timestamp="1606858109870" />
     <state x="1913" y="-147" width="760" height="775" maximized="true" key="dock-window-1" timestamp="1605728281946">
       <screen x="1920" y="-147" width="1366" height="768" />

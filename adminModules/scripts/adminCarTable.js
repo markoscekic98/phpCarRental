@@ -74,7 +74,7 @@ window.addEventListener('load', function () {
 
                             /// $('#adminCarTable').hide();
 
-
+    // TODO move Modal & Click to new script
                             $(".modal-button").click(function () {
                                 var target = $(this).data("target");
                                 let targetValue = $(this).val();
