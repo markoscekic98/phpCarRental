@@ -42,7 +42,7 @@ include('security/antiCSRF.php');
 
     ?>
 
-    <section class="section ">
+    <section class="section  ">
 <!--        <div class="container ">-->
 <!--            <div class="tile is-ancestor is-centered">-->
 <!--                <div class="tile is-6 is-vertical is-parent m-3  notification darker adminTiles">-->
@@ -82,27 +82,26 @@ include('security/antiCSRF.php');
         </div>
 
         <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth is-large ">
+            <nav class="tabs is-boxed is-fullwidth is-large buttons ">
                 <div class="container ">
                     <ul>
-                        <li class="tab is-active p-2" onclick="openTab(event,'Users')">
-                            <a class="has-text-primary">Users</a>
+                        <li class="tab is-active p-2 " onclick="openTab(event,'Users')">
+                            <a class=" button is-medium is-info is-outlined">Users</a>
                         </li>
-                        <li class="tab p-2" onclick="openTab(event,'Cars')">
-                            <a class="has-text-primary">Cars</a>
+                        <li class="tab p-2  " onclick="openTab(event,'Cars')">
+                            <a class="button is-medium is-info is-outlined">Cars</a>
                         </li>
-                        <li class="tab p-2" onclick="openTab(event,'Rent')">
-                            <a class="has-text-primary">Rent</a>
+                        <li class="tab p-2 " onclick="openTab(event,'Rent')">
+                            <a class="button is-medium is-info is-outlined">Rent</a>
                         </li>
                     </ul>
                 </div>
-                <div class="is-divider" ></div>
             </nav>
         </div>
         <div class="container section">
             <div id="Users" class="content-tab">
                 <div class="buttons ">
-                    <button class="button is-medium is-info is-outlined is-light " id="peropero">Show all
+                    <button class="button is-medium is-success is-outlined is-light " id="peropero">Show all
                         users
                     </button>
                     <button class="button is-medium is-info is-outlined is-light " id="">Add new user</button>
@@ -114,11 +113,35 @@ include('security/antiCSRF.php');
             <div id="Cars" class="content-tab" style="display:none">
 
                 <div class="buttons ">
+
+                    <button class="button is-medium is-success is-outlined is-light " id="showAllCarsTable">Show all cars
+                    </button>
                     <button class="button is-medium is-info is-outlined is-light " id="addNewCarShow">Add new car
                     </button>
-                    <button class="button is-medium is-info is-outlined is-light " id="showAllCarsTable">Show all cars
+                </div>
+                <div class="buttons ">
+                    <button class="button is-medium is-success is-outlined is-light " id="showAllCarBrands">Show all brands
+                    </button>
+                    <button class="button is-medium is-primary is-outlined is-light " id="addNewCarBrand">Add new car brand
+                    </button>
+                    <button class="button is-medium is-warning is-outlined is-light " id="updateCarBrand">Update existing car brand
+                    </button>
+                    <button class="button is-medium is-danger is-outlined is-light " id="deleteCarBrand">Delete existing car brand
                     </button>
                 </div>
+                <div class="buttons">
+                    <div class="select is-primary">
+                    <select ><option>Audi</option>
+                        <option>BMW</option>
+                        <option>Citroen</option>
+                        <option>Daihatsu</option>
+                        <option>Ford</option>
+                    </select>
+                    </div>
+                    <button class="button is-medium is-success is-outlined is-light " id="showAllCarModel">Show model of selected brend
+                    </button>
+                </div>
+
 
 
             </div>
